@@ -7,7 +7,7 @@ body{
     font-family: "Lato", sans-serif;
 }
 .container{
-    max-width: 1230px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -178,6 +178,7 @@ nav{
 .why__createx{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 180px;
     div{
         max-width: 390px;
     }
@@ -230,5 +231,111 @@ nav{
             margin-top: 4px;
             flex-shrink: 0;
         }
+    }
+}
+.teachers__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    a{
+        border-radius: 4px;
+        padding: 0px 40px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        text-align: center;
+        color: #f75e05;
+        border: 1px solid #f75e05;
+        &:hover{
+            background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+            color: #fff;
+        }
+    }
+}
+.teachers__text{
+    span{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #1e212c;
+    }
+    h2{
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1e212c;
+    }
+}
+.teachers__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 30px;
+    
+}
+.teachers__card-item{
+    display: flex;
+    max-width: 600px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+    width: 100%;
+}
+.teachers__card-describe{
+    padding: 32px;
+    h6{
+        display: inline-block;
+        padding: 1px 8px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1e212c;
+        margin-bottom: 20px;
+    }
+    span{
+        display: inline-flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+.marketing{
+    background: #03cea4;
+}
+.management{
+    background: #5a87fc;
+}
+.recruting{
+    background: #f89828;
+}
+.design{
+    background: #f52f6e;
+}
+.price{
+    font-weight: 700;
+    color: #ff4242;
+}
+.name{
+    font-weight: 400;
+    color: #787a80;
+    &::before{
+        content: "";
+        border: 1px solid #787a80;
+        width: 16px;
+        transform: rotate(-90deg);
     }
 }

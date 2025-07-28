@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -245,6 +245,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 180px;
 }
 
 .why__createx div {
@@ -312,5 +313,145 @@ nav {
   margin-top: 4px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.teachers__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.teachers__title a {
+  border-radius: 4px;
+  padding: 0px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-align: center;
+  color: #f75e05;
+  border: 1px solid #f75e05;
+}
+
+.teachers__title a:hover {
+  background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  color: #fff;
+}
+
+.teachers__text span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e212c;
+}
+
+.teachers__text h2 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+}
+
+.teachers__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  gap: 30px;
+}
+
+.teachers__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 600px;
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.teachers__card-describe {
+  padding: 32px;
+}
+
+.teachers__card-describe h6 {
+  display: inline-block;
+  padding: 1px 8px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.teachers__card-describe p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 20px;
+}
+
+.teachers__card-describe span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.marketing {
+  background: #03cea4;
+}
+
+.management {
+  background: #5a87fc;
+}
+
+.recruting {
+  background: #f89828;
+}
+
+.design {
+  background: #f52f6e;
+}
+
+.price {
+  font-weight: 700;
+  color: #ff4242;
+}
+
+.name {
+  font-weight: 400;
+  color: #787a80;
+}
+
+.name::before {
+  content: "";
+  border: 1px solid #787a80;
+  width: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 /*# sourceMappingURL=styles.css.map */
