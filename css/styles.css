@@ -94,6 +94,10 @@ nav {
   color: #424551;
 }
 
+.nav__links.active {
+  color: #f75e05;
+}
+
 .box__links {
   display: -webkit-box;
   display: -ms-flexbox;

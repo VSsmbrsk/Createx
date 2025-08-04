@@ -71,6 +71,9 @@ nav{
     line-height: 160%;
     color:#424551;
 }
+.nav__links.active{
+    color: #f75e05;
+}
 .box__links{
     display: flex;
     align-items: center;
