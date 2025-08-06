@@ -790,6 +790,16 @@ nav {
   cursor: pointer;
 }
 
+.slick-prev, .slick-next {
+  background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slick-prev::after, .slick-next::after {
+  background: #ff3f3a;
+}
+
 .team__squad {
   display: -webkit-box;
   display: -ms-flexbox;

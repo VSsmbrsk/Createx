@@ -597,6 +597,13 @@ nav{
         cursor: pointer;
     }
 }
+.slick-prev, .slick-next{
+    background: transparent;
+    transition: 0.3s;
+    &::after{
+        background: #ff3f3a;
+    }
+}
 .team__squad{
     display: flex;
     justify-content: space-between;
