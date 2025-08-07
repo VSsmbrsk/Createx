@@ -73,6 +73,36 @@ $('.auto-play').slick({
       }
   ]
 });
+$('.plays').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    appendArrows: $('.slick__arrows'), 
+    dots: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
 $(document).ready(function () {
   // Load previously opened FAQ from localStorage
   const openId = localStorage.getItem("openFaqId");
