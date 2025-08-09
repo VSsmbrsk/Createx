@@ -1076,15 +1076,15 @@ nav {
 }
 
 .podcast::before {
-  background-image: url(../images/mic.svg);
+  background-image: url(../images/mic_card.svg);
 }
 
 .video::before {
-  background-image: url(../images/video_play.svg);
+  background-image: url(../images/video_play_card.svg);
 }
 
 .articl::before {
-  background-image: url(../images/files.svg);
+  background-image: url(../images/files_card.svg);
 }
 
 .posts__describe {

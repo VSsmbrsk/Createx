@@ -332,8 +332,11 @@ nav{
             line-height: 160%;
             color: #424551;
             &:hover{
-                color: #f75e05;
+                color: #ff3f3a;
             }
+        }
+        a.active{
+            color: #ff3f3a;
         }
         .arrow__pagination{
             &:hover{

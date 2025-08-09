@@ -467,7 +467,11 @@ nav {
 }
 
 .events__pagination ul a:hover {
-  color: #f75e05;
+  color: #ff3f3a;
+}
+
+.events__pagination ul a.active {
+  color: #ff3f3a;
 }
 
 .events__pagination ul .arrow__pagination:hover img {
