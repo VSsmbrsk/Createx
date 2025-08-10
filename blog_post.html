@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Post</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/blog_post.css">
 </head>
 <body>
     <header>
@@ -16,7 +18,7 @@
                     <li><a class="nav__links" href="about_us.html">About Us</a></li>
                     <li><a class="nav__links" href="courses.html">Courses</a></li>
                     <li><a class="nav__links" href="events__list.html">Events</a></li>
-                    <li><a class="nav__links active" href="blog.html">Blog</a></li>
+                    <li><a class="nav__links" href="blog.html">Blog</a></li>
                     <li><a class="nav__links" href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
@@ -118,32 +120,140 @@
         </div>
     </div>
     <section>
-        <div class="blogs container">
-            <h6>Our blog</h6>
-            <h3>Createx School Journal</h3>
-            <div class="blogs__menu">
-                <div class="blogs__kind">
-                    <p>All</p>
-                    <p class="blogs__kind-article">Articles</p>
-                    <p class="blogs__kind-video">Videos</p>
-                    <p class="blogs__kind-podcast">Podcasts</p>
-                </div>
-                <div class="blogs__category">
-                    <div class="category">
-                        <span>Blog category</span>
-                        <p>all themes</p>
+        <div class="container post">
+            <div class="post__content">
+                <span class="post__content-item">Article<span class="post__content-kind">HR & Recruting</span></span>
+                <h1>HR statistics: job search,  interviews, hiring and recruiting</h1>
+                <div class="post__content-info">
+                    <div class="posts__desc">
+                        <span class="posts__date">August 3, 2020</span>
+                        <span class="posts__timer">4 min read</span>
                     </div>
-                    <form action="/search" method="get" role="search" autocomplete="on" class="blogs__form">
-                        <input type="search" name="search" placeholder="Search blog.." required>
-                        <button type="submit"></button>
-                    </form>
+                    <ul>
+                        <li>Share:</li>
+                        <li><a href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                        <li><a href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                        <li><a href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                    </ul>
+                </div>
+                <img class="post__content-banner" src="images/post_image.jpg" alt="post photo">
+                <p class="post__content-bold">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. </p>
+                <p class="post__content-gray">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+                <p class="post__content-gray">Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+                <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                <p class="post__content-gray option">Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+                <ul class="post__content-list">
+                    <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                    <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                    <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                    <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                </ul>
+                <p class="post__content-gray last">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+                <div class="post__content-bottom">
+                    <div>
+                        <p>Tags:</p>
+                        <span>#learning</span>
+                        <span>#HR</span>
+                        <span>#self-development</span>
+                    </div>
+                    <ul>
+                        <li>Share:</li>
+                        <li><a href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                        <li><a href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                        <li><a href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post__info">
+                <form action="/search" method="get" role="search" autocomplete="on" class="courses__form">
+                    <input type="search" name="search" placeholder="Search blog.." required>
+                    <button type="submit"></button>
+                </form>
+                <div class="post__info-author">
+                    <h6>Author</h6>
+                    <div class="author__content">
+                        <img src="images/author_post.png" alt="author of this post">
+                    <div>
+                        <p>Kristin Watson</p>
+                        <span>Curator of Marketing Course</span>
+                        <ul>
+                            <li><a class="instagram" href="#" target="_blank" title="Instagram"><img src="images/Instagram_event.svg" alt="Instagram logo"></a></li>
+                            <li><a class="twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_curator.svg" alt="Twitter logo"></a></li>
+                            <li><a class="linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin_curator.svg" alt="LinkedIn logo"></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="post__info-trending">
+                    <h6>Trending articles</h6>
+                    <div class="trending__post">
+                        <img src="images/trend_one.jpg" alt="Trending post photo">
+                        <div>
+                            <span class="posts__date">September 4, 2020</span>
+                            <p>What is traffic arbitrage and does it really make money?</p>
+                        </div>
+                    </div>
+                    <div class="trending__post">
+                        <img src="images/trend_two.jpg" alt="Trending post photo">
+                        <div>
+                            <span class="posts__date">July 15, 2020</span>
+                            <p>Startup: how to build a team that will live longer than a year</p>
+                        </div>
+                    </div>
+                    <div class="trending__post">
+                        <img src="images/trend_three.jpg" alt="Trending post photo">
+                        <div>
+                            <span class="posts__date">August 2, 2020</span>
+                            <p>What to do if you want to get feedback on the product</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__info-tags">
+                    <h6>Tags</h6>
+                    <div>
+                        <span>#marketing</span>
+                        <span>#recruting</span>
+                        <span>#coding</span>
+                        <span>#learning</span>
+                        <span>#HR</span>
+                        <span>#self-development</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="blog__posts">
+        <div class="container event__form">
+            <img src="images/illustration_blog.png" alt="illustration">
+            <div class="event__subscribe">
+                <h3>Don’t want to miss the best events?
+                    Subscribe to our newsletter!</h3>
+                <form action="" method="get">
+                    <div class="form-item">
+                        <input type="email" name="email" placeholder="Your working email">
+                    <button class="link" type="submit">Subscribe</button>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required checked />
+                        <span class="checkbox__custom"></span>
+                        <span class="checkbox__text">
+                          I agree to receive communications from Createx Online School
+                        </span>
+                      </label>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container blog">
+            <div class="blog__title">
+                <div class="blog__text">
+                    <span>Our blog</span>
+                    <h2>You may also like</h2>
+                </div>
+                <div class="slick__arrows"></div>
+            </div>
+            <div class="blog__posts plays">
                 <div class="blog__posts-item">
                     <p class="blog__text_absolute podcast">Podcast</p>
                     <img src="images/podcast.png" alt="podcast picture">
@@ -156,7 +266,7 @@
                     <p class="posts__text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
                     <a href="blog_post.html" class="posts__link">Listen</a>
                 </div>
-                <div class="blog__posts-item option">
+                <div class="blog__posts-item options">
                     <p class="blog__text_absolute articl">Article</p>
                     <img src="images/blog_art_dev.jpg" alt="video picture">
                     <div class="posts__describe">
@@ -177,29 +287,6 @@
                     </div>
                     <p class="posts__title">Should you choose a creative profession if you are attracted to creativity?</p>
                     <p class="posts__text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
-                    <a href="blog_post.html" class="posts__link">Watch</a>
-                </div>
-                <div class="blog__posts-big option">
-                    <p class="blog__text_absolute articl">Article</p>
-                    <img src="images/blog_big.jpg" alt="article picture">
-                    <div class="posts__describe">
-                        <span class="posts__item">HR & Recruting</span>
-                        <span class="posts__date">August 3, 2020</span>
-                    </div>
-                    <p class="posts__title">HR statistics: job search,  interviews, hiring and recruiting</p>
-                    <p class="posts__text">Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...</p>
-                    <a href="blog_post.html" class="posts__link">Read</a>
-                </div>
-                <div class="blog__posts-md">
-                    <p class="blog__text_absolute video">Video</p>
-                    <img src="images/blog_md.jpg" alt="podcast picture">
-                    <div class="posts__describe">
-                        <span class="posts__item">Management</span>
-                        <span class="posts__date">August 25, 2020</span>
-                        <span class="posts__timer">45 min</span>
-                    </div>
-                    <p class="posts__title">What to do and who to talk to if you want to get feedback on the product</p>
-                    <p class="posts__text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
                     <a href="blog_post.html" class="posts__link">Watch</a>
                 </div>
                 <div class="blog__posts-item">
@@ -226,7 +313,7 @@
                     <p class="posts__text">Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...</p>
                     <a href="blog_post.html" class="posts__link">Watch</a>
                 </div>
-                <div class="blog__posts-item option">
+                <div class="blog__posts-item options">
                     <p class="blog__text_absolute articl">Article</p>
                     <img src="images/blog_article.jpg" alt="podcast picture">
                     <div class="posts__describe">
@@ -238,36 +325,9 @@
                     <a href="blog_post.html" class="posts__link">Read</a>
                 </div>
             </div>
-            <div class="events__pagination">
-                <ul>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a class="arrow__pagination" href="#"><img src="images/arrow_next.svg" alt="arrow icon"></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container event__form">
-            <img src="images/illustration_blog.png" alt="illustration">
-            <div class="event__subscribe">
-                <h3>Don’t want to miss the best events?
-                    Subscribe to our newsletter!</h3>
-                <form action="" method="get">
-                    <div class="form-item">
-                        <input type="email" name="email" placeholder="Your working email">
-                    <button class="link" type="submit">Subscribe</button>
-                    </div>
-                    <label class="checkbox">
-                        <input type="checkbox" required checked />
-                        <span class="checkbox__custom"></span>
-                        <span class="checkbox__text">
-                          I agree to receive communications from Createx Online School
-                        </span>
-                      </label>
-                </form>
+            <div class="blog__more">
+                <p>Do you want more articles, podcasts and videos?</p>
+                <a class="link" href="blog.html">Go to blog</a>
             </div>
         </div>
     </section>

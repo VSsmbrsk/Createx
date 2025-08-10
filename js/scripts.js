@@ -135,3 +135,74 @@ $(document).ready(function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modalLogin = document.getElementById('modalOverlay'); // твой Sign in
+    const modalSignup = document.getElementById('modalSignup'); // новый Sign up
+
+    const linkToSignup = modalLogin?.querySelector('.link-up');
+    const linkToLogin = modalSignup?.querySelector('.link-in');
+
+    const closeButtons = document.querySelectorAll('[data-close], #closeModal');
+
+    // Открытие модалки
+    function openModal(modal) {
+        if (!modal) return;
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Закрытие модалки
+    function closeModal(modal) {
+        if (!modal) return;
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Закрыть все
+    function closeAllModals() {
+        closeModal(modalLogin);
+        closeModal(modalSignup);
+    }
+
+    // Переключение Sign in → Sign up
+    linkToSignup?.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeModal(modalLogin);
+        openModal(modalSignup);
+    });
+
+    // Переключение Sign up → Sign in
+    linkToLogin?.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeModal(modalSignup);
+        openModal(modalLogin);
+    });
+
+    // Закрытие по крестику
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', () => closeAllModals());
+    });
+
+    // Закрытие по клику на overlay
+    [modalLogin, modalSignup].forEach(modal => {
+        modal?.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal(modal);
+            }
+        });
+    });
+
+    // Закрытие по Esc
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeAllModals();
+        }
+    });
+
+    // Пример открытия Sign in (можешь привязать к своей кнопке в шапке)
+    document.querySelector('.login__link')?.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal(modalLogin);
+    });
+});

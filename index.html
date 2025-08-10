@@ -30,6 +30,97 @@
             </div>
         </div>
     </header>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-wrapper">
+            <div class="modal">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h1>Sign in</h1>
+                <p class="modal-text">Sign in to your account using email and password provided during registration.</p>
+                <div class="input__modal">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your working email">
+                </div>
+                <div class="input__modal">
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <div class="check-link">
+                    <label class="check-box">
+                        <input type="checkbox" required checked />
+                        <span class="check-box__custom"></span>
+                        <span class="check-box__text">
+                          Keep me signed in
+                        </span>
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <a class="modal-link link" href="#">Sign in</a>
+                <p class="modal-up">Don't have an account? <a class="link-up" href="#">Sign up</a></p>
+            </div>
+            <div class="sign-social">
+                <p>Or sign in with</p>
+                <ul>
+                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
+                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalSignup">
+        <div class="modal-wrapper">
+            <div class="modal">
+                <span class="close-btn" data-close>&times;</span>
+                <h1>Sign up</h1>
+                <p class="modal-text">Registration takes less than a minute but gives you full control over your studying.</p>
+    
+                <div class="input__modal">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" placeholder="Your full name">
+                </div>
+                <div class="input__modal">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your working email">
+                </div>
+                <div class="input__modal">
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <div class="input__modal">
+                    <label for="confirm">Confirm Password</label>
+                    <div>
+                        <input type="password" name="confirm password" placeholder="Confirm password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <label class="check-box">
+                    <input type="checkbox" required checked />
+                    <span class="check-box__custom"></span>
+                    <span class="check-box__text">
+                      Remember me
+                    </span>
+                </label>
+                <a class="modal-link link" href="#">Sign up</a>
+                <p class="modal-up">Already have an account? <a class="link-in" href="#">Sign in</a></p>
+            </div>
+            <div class="sign-social">
+                <p>Or sign in with</p>
+                <ul>
+                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
+                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="container inform">
             <div class="inform__wrapper">
@@ -395,7 +486,7 @@
                     <h6>Our blog</h6>
                     <h3>Latest posts</h3>
                 </div>
-                <a class="link" href="#">Go to blog</a>
+                <a class="link" href="blog.html">Go to blog</a>
             </div>
             <div class="blog__posts">
                 <div class="blog__posts-item">
@@ -408,7 +499,7 @@
                     </div>
                     <p class="posts__title">What is traffic arbitrage and does it really make money?</p>
                     <p class="posts__text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
-                    <a href="#" class="posts__link">Listen</a>
+                    <a href="blog_post.html" class="posts__link">Listen</a>
                 </div>
                 <div class="blog__posts-item">
                     <p class="blog__text_absolute video">Video</p>
@@ -420,7 +511,7 @@
                     </div>
                     <p class="posts__title">What to do and who to talk to if you want to get feedback on the product</p>
                     <p class="posts__text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
-                    <a href="#" class="posts__link">Watch</a>
+                    <a href="blog_post.html" class="posts__link">Watch</a>
                 </div>
                 <div class="blog__posts-item option">
                     <p class="blog__text_absolute articl">Article</p>
@@ -431,7 +522,7 @@
                     </div>
                     <p class="posts__title">Should you choose a creative profession if you are attracted to creativity?</p>
                     <p class="posts__text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
-                    <a href="#" class="posts__link">Read</a>
+                    <a href="blog_post.html" class="posts__link">Read</a>
                 </div>
             </div>
         </div>
@@ -468,11 +559,11 @@
                 <div class="footer__list">
                     <h6>Site map</h6>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="events__list.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </div>
                 <div class="footer__list">

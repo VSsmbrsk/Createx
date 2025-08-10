@@ -15,11 +15,11 @@
             <nav>
                 <a href="index.html"><img src="images/logo.svg" alt="Createx logo"></a>
                 <ul class="nav__list">
-                    <li><a class="nav__links" href="#">About Us</a></li>
+                    <li><a class="nav__links" href="about_us.html">About Us</a></li>
                     <li><a class="nav__links active" href="courses.html">Courses</a></li>
                     <li><a class="nav__links" href="events__list.html">Events</a></li>
-                    <li><a class="nav__links" href="#">Blog</a></li>
-                    <li><a class="nav__links" href="#">Contacts</a></li>
+                    <li><a class="nav__links" href="blog.html">Blog</a></li>
+                    <li><a class="nav__links" href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
             <div class="box__links">
@@ -28,6 +28,97 @@
             </div>
         </div>
     </header>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-wrapper">
+            <div class="modal">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h1>Sign in</h1>
+                <p class="modal-text">Sign in to your account using email and password provided during registration.</p>
+                <div class="input__modal">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your working email">
+                </div>
+                <div class="input__modal">
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <div class="check-link">
+                    <label class="check-box">
+                        <input type="checkbox" required checked />
+                        <span class="check-box__custom"></span>
+                        <span class="check-box__text">
+                          Keep me signed in
+                        </span>
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <a class="modal-link link" href="#">Sign in</a>
+                <p class="modal-up">Don't have an account? <a class="link-up" href="#">Sign up</a></p>
+            </div>
+            <div class="sign-social">
+                <p>Or sign in with</p>
+                <ul>
+                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
+                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalSignup">
+        <div class="modal-wrapper">
+            <div class="modal">
+                <span class="close-btn" data-close>&times;</span>
+                <h1>Sign up</h1>
+                <p class="modal-text">Registration takes less than a minute but gives you full control over your studying.</p>
+    
+                <div class="input__modal">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" placeholder="Your full name">
+                </div>
+                <div class="input__modal">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your working email">
+                </div>
+                <div class="input__modal">
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <div class="input__modal">
+                    <label for="confirm">Confirm Password</label>
+                    <div>
+                        <input type="password" name="confirm password" placeholder="Confirm password">
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <label class="check-box">
+                    <input type="checkbox" required checked />
+                    <span class="check-box__custom"></span>
+                    <span class="check-box__text">
+                      Remember me
+                    </span>
+                </label>
+                <a class="modal-link link" href="#">Sign up</a>
+                <p class="modal-up">Already have an account? <a class="link-in" href="#">Sign in</a></p>
+            </div>
+            <div class="sign-social">
+                <p>Or sign in with</p>
+                <ul>
+                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
+                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
+                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="container courses">
             <h6>Enjoy your studying!</h6>
@@ -47,7 +138,7 @@
                 </form>
             </div>
             <div class="courses__cards">
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/bell_courses.png" alt="Jerome Bell photo">
                     <div class="teachers__card-describe">
                         <span class="proff marketing">Marketing</span>
@@ -55,7 +146,7 @@
                         <span class="price">$100 <span class="name">by Jerome Bell</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/marvin_courses.png" alt="Marvin McKinney photo">
                     <div class="teachers__card-describe">
                         <span class="proff management">Management</span>
@@ -63,7 +154,7 @@
                         <span class="price">$480 <span class="name">by Marvin McKinney</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/leslie_courses.png" alt="Leslie Alexander Li photo">
                     <div class="teachers__card-describe">
                         <span class="proff recruting">HR & Recruting</span>
@@ -71,7 +162,7 @@
                         <span class="price">$200 <span class="name">by Leslie Alexander Li</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/watson_courses.png" alt="Kristin Watson photo">
                     <div class="teachers__card-describe">
                         <span class="proff marketing">Marketing</span>
@@ -79,7 +170,7 @@
                         <span class="price">$530 <span class="name">by Kristin Watson</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/guy_courses.png" alt="Guy Hawkins photo">
                     <div class="teachers__card-describe">
                         <span class="proff design">Design</span>
@@ -87,7 +178,7 @@
                         <span class="price">$500 <span class="name">by Guy Hawkins</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/dianne_courses.png" alt="Dianne Russell photo">
                     <div class="teachers__card-describe">
                         <span class="proff management">Management</span>
@@ -95,7 +186,7 @@
                         <span class="price">$400 <span class="name">by Dianne Russell</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/simmons_courses.png" alt="Brooklyn Simmons photo">
                     <div class="teachers__card-describe">
                         <span class="proff development">Development</span>
@@ -103,7 +194,7 @@
                         <span class="price">$600 <span class="name">by Brooklyn Simmons</span></span>
                     </div>
                 </a>
-                <a href="#" class="courses__cards-item">
+                <a href="course_example.html" class="courses__cards-item">
                     <img src="images/murphy_courses.png" alt="Kathryn Murphy photo">
                     <div class="teachers__card-describe">
                         <span class="proff recruting">HR & Recruting</span>
@@ -218,11 +309,11 @@
                 <div class="footer__list">
                     <h6>Site map</h6>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="events__list.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </div>
                 <div class="footer__list">
