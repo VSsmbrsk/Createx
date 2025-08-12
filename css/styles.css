@@ -296,10 +296,6 @@ nav.sub-menu-open .nav-links li {
           transform: translateY(-10%);
 }
 
-nav.sub-menu-open .nav-links .hover-el {
-  opacity: 0;
-}
-
 .box__links {
   display: -webkit-box;
   display: -ms-flexbox;
