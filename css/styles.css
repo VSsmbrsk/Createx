@@ -636,6 +636,13 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 180px;
 }
 
+@media screen and (max-width: 440px) {
+  .inform {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+  }
+}
+
 .inform__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,7 +650,7 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 128px;
+  padding: 128px;
   margin-bottom: 190px;
 }
 
@@ -720,6 +727,12 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 440px) {
+  .inform__text h1 {
+    font-size: 40px;
+  }
+}
+
 .inform__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,8 +775,8 @@ nav.sub-menu-open .nav-links li {
 
 @media screen and (max-width: 440px) {
   .inform__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -780,6 +793,12 @@ nav.sub-menu-open .nav-links li {
           align-items: center;
   margin-bottom: 80px;
   gap: 12px;
+}
+
+@media screen and (max-width: 440px) {
+  .inform__item-block {
+    margin: 0;
+  }
 }
 
 .ball::after {
@@ -836,6 +855,12 @@ nav.sub-menu-open .nav-links li {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .why__createx {
+    margin-bottom: 60px;
   }
 }
 
@@ -933,6 +958,12 @@ nav.sub-menu-open .nav-links li {
 
 .teachers {
   margin-bottom: 180px;
+}
+
+@media screen and (max-width: 440px) {
+  .teachers {
+    margin-bottom: 60px;
+  }
 }
 
 .teachers__title {
@@ -1106,6 +1137,12 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 120px;
 }
 
+@media screen and (max-width: 440px) {
+  .benefits {
+    margin-bottom: 60px;
+  }
+}
+
 .benefits h6, .benefits h3 {
   text-align: center;
 }
@@ -1255,6 +1292,12 @@ nav.sub-menu-open .nav-links li {
   background-color: #ffd6cf;
   padding: 80px 15px;
   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 440px) {
+  .events {
+    margin-bottom: 60px;
+  }
 }
 
 .events h6, .events h3 {
@@ -1446,6 +1489,12 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 48px;
 }
 
+@media screen and (max-width: 440px) {
+  .certificate__info h3 {
+    font-size: 35px;
+  }
+}
+
 .certificate__info p {
   font-weight: 400;
   font-size: 16px;
@@ -1480,7 +1529,7 @@ nav.sub-menu-open .nav-links li {
 }
 
 .team {
-  padding-top: 120px;
+  padding: 120px 0 50px;
   background-color: #f4f5f6;
 }
 
@@ -1500,6 +1549,29 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 440px) {
+  .team__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .team__header h3 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .team__header h3, .team__header h6 {
+    text-align: center;
+  }
 }
 
 .team__header .slick-prev {
@@ -1739,6 +1811,12 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 180px;
 }
 
+@media screen and (max-width: 440px) {
+  .blog {
+    margin-bottom: 60px;
+  }
+}
+
 .blog__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1973,6 +2051,12 @@ nav.sub-menu-open .nav-links li {
 .form__item {
   background-color: #ffd6cf;
   padding: 120px 0 180px;
+}
+
+@media screen and (max-width: 440px) {
+  .form__item {
+    padding: 50px 0;
+  }
 }
 
 .form__item-title {

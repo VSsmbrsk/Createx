@@ -492,6 +492,10 @@ nav {
     text-align: center;
     padding: 120px 0;
     margin-bottom: 120px;
+    @include max-screen(440px){
+        padding: 40px 0;
+        margin-bottom: 60px;
+    }
     div{
         max-width: 1020px;
         margin: 0 auto;
@@ -516,6 +520,9 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+    }
+    @include max-screen(440px){
+        margin-bottom: 60px;
     }
 }
 .about__describe{
@@ -608,6 +615,9 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+    }
+    @include max-screen(440px){
+        margin-bottom: 60px;
     }
     img{
         max-width: 495px;
@@ -723,12 +733,14 @@ nav {
         justify-content: center;
         gap: 20px;
     }
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 
 .process__item {
     width: 285px;
     cursor: pointer;
-
     span {
         position: relative;
         display: flex;
@@ -749,7 +761,6 @@ nav {
             transition: all 0.4s ease;
         }
     }
-
     h5 {
         font-weight: 700;
         font-size: 20px;
@@ -757,7 +768,6 @@ nav {
         margin-bottom: 8px;
         color: #1e212c;
     }
-
     p {
         font-weight: 400;
         font-size: 16px;
@@ -785,6 +795,9 @@ nav {
     background: #ffd6cf;
     padding: 48px 60px;
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 .sale__title{
     display: flex;
@@ -876,6 +889,7 @@ nav {
     margin-bottom: 180px;
     @include max-screen(440px){
         flex-wrap: wrap;
+        margin-bottom: 60px;
     }
 }
 .advantages__title{
@@ -914,6 +928,9 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+    }
+    @include max-screen(440px){
+        margin-bottom: 40px;
     }
     img{
         max-width: 495px;
@@ -1027,6 +1044,9 @@ nav {
 .register{
     background: #f4f5f6;
     margin-bottom: 120px;
+    @include max-screen(440px){
+        margin-bottom: 40px;
+    }
 }
 .register__wrapper{
     display: flex;
@@ -1037,6 +1057,9 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
+    }
+    @include max-screen(440px){
+        padding: 40px 0 30px;
     }
     img{
         max-width: 550px;
@@ -1071,12 +1094,20 @@ nav {
 }
 .teachers{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 .teachers__title{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 60px;
+    @include max-screen(440px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 .teachers__title{
     .slick-prev{
@@ -1111,6 +1142,9 @@ nav {
     }
 }
 .teachers__text{
+    @include max-screen(440px){
+        text-align: center;
+    }
     span{
         font-weight: 700;
         font-size: 16px;

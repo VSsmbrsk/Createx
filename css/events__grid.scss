@@ -716,6 +716,9 @@ nav {
     justify-content: center;
     align-content: center;
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     ul{
         display: flex;
         gap: 20px;
@@ -743,6 +746,9 @@ nav {
 .form__item{
     background-color: #ffd6cf;
     padding: 120px 0 180px;
+    @include max-screen(440px){
+        padding: 60px 0;
+    }
 }
 .form__item-title{
     max-width: 810px;

@@ -2,8 +2,8 @@
     @media screen and (max-width: $res) {
       @content;
     }
-}
-@mixin flex-center {
+  }
+  @mixin flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,7 +24,7 @@ body{
 li{
     list-style: none;
 }
-h3{
+h1, h3{
     font-weight: 900;
     font-size: 46px;
     line-height: 130%;
@@ -58,8 +58,8 @@ a{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding-top: 20px;
     margin-bottom: 60px;
+    padding-top: 20px;
     @include max-screen(1024px){
         align-items: baseline;
     }
@@ -90,15 +90,15 @@ a{
 nav {
     @include max-screen(834px){
         --transition-time: 500ms;
-	    position: relative;
-	    width: 200px;
-	    height: auto;
-	    display: flex;
-	    align-items: center;
-	    transform: translateX(-100%);
-	    transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
-	    z-index: 4;
-        order: 1;
+	position: relative;
+	width: 200px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	transform: translateX(-100%);
+	transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+	z-index: 4;
+    order: 1;
     }
 	a{
         &:hover{
@@ -120,12 +120,13 @@ nav {
             display: block;
             top: 0;
             padding: 0 50px;
-            background: #fff;
+            background: white;
         }
 		li {
             @include max-screen(834px){
-                margin-bottom: 10px;
+            margin-bottom: 10px;
             }
+			
 		}
 	}
 	.sub-menu {
@@ -497,6 +498,9 @@ nav {
         text-align: center;
         gap: 50px;
     }
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     img{
         max-width: 465px;
         width: 100%;
@@ -570,6 +574,9 @@ nav {
         flex-wrap: wrap;
         gap: 50px;
     }
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     img{
         max-width: 810px;
         width: 100%;
@@ -607,6 +614,9 @@ nav {
 }
 .values{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h6, h3{
         text-align: center;
     }
@@ -657,6 +667,9 @@ nav {
 }
 .directions{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h6, h3{
         text-align: center;
     }
@@ -820,6 +833,9 @@ nav {
 }
 .team{
     margin-bottom: 120px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h6, h3{
         text-align: center;
     }
@@ -991,8 +1007,11 @@ nav {
     background-color: #f4f5f6;
     padding-bottom: 100px;
     margin-bottom: 100px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     @include max-screen(414px){
-        padding-top: 50px;
+        padding: 50px 0;
     }
     h6, h3{
         text-align: center;
@@ -1006,6 +1025,9 @@ nav {
 }
 .blog{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 .blog__text{
     display: flex;
@@ -1183,6 +1205,9 @@ nav {
 .form__item{
     background-color: #ffd6cf;
     padding: 120px 0 180px;
+    @include max-screen(440px){
+        padding: 60px;
+    }
 }
 .form__item-title{
     max-width: 810px;
@@ -1190,7 +1215,7 @@ nav {
     text-align: center;
     h3{
         @include max-screen(360px){
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 }

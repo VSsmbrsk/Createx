@@ -497,6 +497,9 @@ nav {
         justify-content: center;
         gap: 50px;
     }
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h3{
         margin-bottom: 40px;
     }

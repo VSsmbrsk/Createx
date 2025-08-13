@@ -19,7 +19,7 @@ li {
   list-style: none;
 }
 
-h3 {
+h1, h3 {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -62,8 +62,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -161,7 +161,7 @@ nav .nav-list {
     display: block;
     top: 0;
     padding: 0 50px;
-    background: #fff;
+    background: white;
   }
 }
 
@@ -656,6 +656,12 @@ nav.sub-menu-open .nav-links li {
   }
 }
 
+@media screen and (max-width: 440px) {
+  .about {
+    margin-bottom: 60px;
+  }
+}
+
 .about img {
   max-width: 465px;
   width: 100%;
@@ -762,6 +768,12 @@ nav.sub-menu-open .nav-links li {
   }
 }
 
+@media screen and (max-width: 440px) {
+  .watch__item {
+    margin-bottom: 60px;
+  }
+}
+
 .watch__item img {
   max-width: 810px;
   width: 100%;
@@ -819,6 +831,12 @@ nav.sub-menu-open .nav-links li {
 
 .values {
   margin-bottom: 180px;
+}
+
+@media screen and (max-width: 440px) {
+  .values {
+    margin-bottom: 60px;
+  }
 }
 
 .values h6, .values h3 {
@@ -892,6 +910,12 @@ nav.sub-menu-open .nav-links li {
 
 .directions {
   margin-bottom: 180px;
+}
+
+@media screen and (max-width: 440px) {
+  .directions {
+    margin-bottom: 60px;
+  }
 }
 
 .directions h6, .directions h3 {
@@ -1103,6 +1127,12 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 120px;
 }
 
+@media screen and (max-width: 440px) {
+  .team {
+    margin-bottom: 60px;
+  }
+}
+
 .team h6, .team h3 {
   text-align: center;
 }
@@ -1308,9 +1338,15 @@ nav.sub-menu-open .nav-links li {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 440px) {
+  .jobs {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .jobs {
-    padding-top: 50px;
+    padding: 50px 0;
   }
 }
 
@@ -1332,6 +1368,12 @@ nav.sub-menu-open .nav-links li {
 
 .blog {
   margin-bottom: 180px;
+}
+
+@media screen and (max-width: 440px) {
+  .blog {
+    margin-bottom: 60px;
+  }
 }
 
 .blog__text {
@@ -1570,6 +1612,12 @@ nav.sub-menu-open .nav-links li {
   padding: 120px 0 180px;
 }
 
+@media screen and (max-width: 440px) {
+  .form__item {
+    padding: 60px;
+  }
+}
+
 .form__item-title {
   max-width: 810px;
   margin: 0 auto;
@@ -1578,7 +1626,7 @@ nav.sub-menu-open .nav-links li {
 
 @media screen and (max-width: 360px) {
   .form__item-title h3 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 

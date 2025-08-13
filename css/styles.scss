@@ -490,11 +490,15 @@ nav {
 .inform{
     background-color: #ffd6cf;
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+    }
 }
 .inform__wrapper{
     display: flex;
     justify-content: space-between;
-    padding-top: 128px;
+    padding: 128px;
     margin-bottom: 190px;
     @include max-screen(992px){
         flex-wrap: wrap;
@@ -547,6 +551,9 @@ nav {
         letter-spacing: 0.02em;
         color: #1e212c;
         margin-bottom: 60px;
+        @include max-screen(440px){
+            font-size: 40px;
+        }
     }
 }
 .inform__links{
@@ -570,7 +577,7 @@ nav {
     display: flex;
     justify-content: space-between;
     @include max-screen(440px){
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         justify-content: center;
         gap: 20px;
     }
@@ -580,6 +587,9 @@ nav {
     align-items: center;
     margin-bottom: 80px;
     gap: 12px;
+    @include max-screen(440px){
+        margin: 0;
+    }
 }
 .ball{
     &::after{
@@ -618,7 +628,10 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-      }
+    }
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     div{
         max-width: 390px;
     }
@@ -689,6 +702,9 @@ nav {
 }
 .teachers{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 .teachers__title{
     display: flex;
@@ -804,6 +820,9 @@ nav {
 }
 .benefits{
     margin-bottom: 120px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h6, h3{
         text-align: center;
     }
@@ -923,6 +942,9 @@ nav {
     background-color: #ffd6cf;
     padding: 80px 15px;
     margin-bottom: 120px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
     h6, h3{
         text-align: center;
     }
@@ -1037,15 +1059,18 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
-      }
+    }
 }
 .certificate__info{
     max-width: 395px;
     @include max-screen(1024px){
         text-align: center;
-      }
+    }
     h3{
         margin-bottom: 48px;
+        @include max-screen(440px){
+            font-size: 35px;
+        }
     }
     p{
         font-weight: 400;
@@ -1069,7 +1094,7 @@ nav {
     width: 100%;
 }
 .team{
-    padding-top: 120px;
+    padding: 120px 0 50px;
     background-color: #f4f5f6;
     @include max-screen(414px){
         margin-bottom: 60px;
@@ -1079,6 +1104,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include max-screen(440px){
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    h3{
+        @include max-screen(440px){
+            margin-bottom: 20px;
+        }
+    }
+    h3, h6{
+        @include max-screen(440px){
+            text-align: center;
+        }
+    }
 }
 .team__header{
     .slick-prev{
@@ -1276,6 +1316,9 @@ nav {
 }
 .blog{
     margin-bottom: 180px;
+    @include max-screen(440px){
+        margin-bottom: 60px;
+    }
 }
 .blog__text{
     display: flex;
@@ -1453,6 +1496,9 @@ nav {
 .form__item{
     background-color: #ffd6cf;
     padding: 120px 0 180px;
+    @include max-screen(440px){
+        padding: 50px 0;
+    }
 }
 .form__item-title{
     max-width: 810px;
