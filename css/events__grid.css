@@ -1038,6 +1038,12 @@ nav.sub-menu-open .nav-links li {
   width: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  .createx__form input {
+    max-width: 310px;
+  }
+}
+
 .createx__form button {
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
   color: #fff;

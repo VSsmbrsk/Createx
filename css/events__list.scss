@@ -797,6 +797,9 @@ nav {
         color: #9a9ca5;
         max-width: 422px;
         width: 100%;
+        @include max-screen(414px){
+            max-width: 310px;
+        }
     }
     button{
         background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);

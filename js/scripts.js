@@ -60,9 +60,9 @@ $('.auto-play').slick({
           }
       },
       {
-          breakpoint: 992,
+          breakpoint: 1025,
           settings: {
-              slidesToShow: 2
+              slidesToShow: 1
           }
       },
       {

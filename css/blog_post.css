@@ -961,6 +961,12 @@ nav.sub-menu-open .nav-links li {
   gap: 20px;
 }
 
+@media screen and (max-width: 320px) {
+  .author__content {
+    gap: 10px;
+  }
+}
+
 .author__content p {
   font-weight: 700;
   font-size: 20px;
@@ -1397,6 +1403,8 @@ nav.sub-menu-open .nav-links li {
   background-image: url(../images/calendar.svg);
   width: 16px;
   height: 17px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .posts__date::after {
@@ -1419,6 +1427,8 @@ nav.sub-menu-open .nav-links li {
   background-image: url(../images/clock.svg);
   width: 16px;
   height: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .posts__title {

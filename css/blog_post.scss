@@ -712,6 +712,9 @@ nav {
 .author__content{
     display: flex;
     gap: 20px;
+    @include max-screen(320px){
+        gap: 10px;
+    }
     p{
         font-weight: 700;
         font-size: 20px;
@@ -1056,6 +1059,7 @@ nav {
         background-image: url(../images/calendar.svg);
         width: 16px;
         height: 17px;
+        flex-shrink: 0;
     }
     &::after{
         content: "";
@@ -1074,6 +1078,7 @@ nav {
         background-image: url(../images/clock.svg);
         width: 16px;
         height: 15px;
+        flex-shrink: 0;
     }
 }
 .posts__title{

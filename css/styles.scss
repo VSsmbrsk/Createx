@@ -1304,7 +1304,7 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-      }
+    }
 }
 .blog__posts-item{
     max-width: 390px;
@@ -1388,6 +1388,7 @@ nav {
         background-image: url(../images/calendar.svg);
         width: 16px;
         height: 17px;
+        flex-shrink: 0;
     }
     &::after{
         content: "";
@@ -1406,6 +1407,7 @@ nav {
         background-image: url(../images/clock.svg);
         width: 16px;
         height: 15px;
+        flex-shrink: 0;
     }
 }
 .posts__title{
@@ -1483,6 +1485,9 @@ nav {
         color: #9a9ca5;
         max-width: 422px;
         width: 100%;
+        @include max-screen(414px){
+            max-width: 310px;
+        }
     }
     button{
         background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
