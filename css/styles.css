@@ -605,6 +605,9 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
   margin-bottom: 48px;
 }
@@ -650,7 +653,10 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 128px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 128px;
   margin-bottom: 190px;
 }
 
@@ -742,16 +748,11 @@ nav.sub-menu-open .nav-links li {
 
 @media screen and (max-width: 992px) {
   .inform__links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .inform__links {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -1335,9 +1336,9 @@ nav.sub-menu-open .nav-links li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1421,6 +1422,9 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   max-width: 495px;
 }
@@ -1529,7 +1533,7 @@ nav.sub-menu-open .nav-links li {
 }
 
 .team {
-  padding: 120px 0 50px;
+  padding: 120px 15px 50px;
   background-color: #f4f5f6;
 }
 
@@ -1609,6 +1613,9 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team__squad {
@@ -2312,6 +2319,9 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
 }
 

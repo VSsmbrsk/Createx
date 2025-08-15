@@ -773,11 +773,11 @@ nav.sub-menu-open .nav-links li {
 
 @media screen and (max-width: 440px) {
   .contacts__info-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -985,6 +985,13 @@ nav.sub-menu-open .nav-links li {
   padding: 0px 117px;
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbutton button:hover {
+  background: #fff;
+  color: #f75e05;
 }
 
 @media screen and (max-width: 360px) {
@@ -1180,6 +1187,9 @@ nav.sub-menu-open .nav-links li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
 }
 

@@ -1,3 +1,4 @@
+@import '_variables';
 @mixin max-screen($res) {
     @media screen and (max-width: $res) {
       @content;
@@ -7,6 +8,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+@mixin space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin flex-wrap {
+	flex-wrap: wrap;
+	justify-content: center;
 }
 *{
     margin: 0;
@@ -25,41 +35,41 @@ li{
     list-style: none;
 }
 h3{
-    font-weight: 900;
-    font-size: 46px;
-    line-height: 130%;
-    color: #1e212c;
-    margin-bottom: 60px;
+    font-weight: $font-weight-black;
+    font-size: $font-size-lg;
+    line-height: $line-height-sm;
+    color: $color-dark;
+    margin-bottom: $mb-adaptive;
 }
 h6{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #1e212c;
-    margin-bottom: 8px;
+    color: $color-dark;
+    margin-bottom: $mb-text;
 }
 a{
     text-decoration: none;
-    transition: 0.3s;
+    transition: $transition-regular;
 }
 .link{
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
     line-height: 325%;
     letter-spacing: 0.03em;
-    text-align: center;
-    border-radius: 4px;
+    text-align: $text-align-primary;
+    border-radius: $b-radius-base;
     padding: 0 40px;
-    border: 1px solid #f75e05;
+    border: 1px solid $color-orange;
 }
 .box{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: $mb-adaptive;
     @include max-screen(1024px){
         align-items: baseline;
     }
@@ -69,7 +79,7 @@ a{
 }
 .logo{
     @include max-screen(834px){
-        display: inline-flex;
+        display: $display-link-flex;
         order: 2;
         justify-content: center;
     }
@@ -79,13 +89,13 @@ a{
 }
 .nav__link,
 .login__link{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 160%;
-    color:#424551;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    line-height: $line-height-md;
+    color: $color-gray;
 }
 .nav__links.active{
-    color: #f75e05;
+    color: $color-orange;
 }
 nav {
     @include max-screen(834px){
@@ -102,7 +112,7 @@ nav {
     }
 	a{
         &:hover{
-            color: #f75e05;
+            color: $color-orange;
         }
 	}
     .nav-list{
@@ -120,7 +130,7 @@ nav {
             display: block;
             top: 0;
             padding: 0 50px;
-            background: #fff;
+            background: $color-white;
         }
 		li {
             @include max-screen(834px){
@@ -134,7 +144,7 @@ nav {
 		position: absolute;
 		top: 50%;
 		left: 0;
-		width: 100%;
+		width: $width-img;
 		transform: translateY(-50%);
 	}
 	.menu-btn {
@@ -170,7 +180,7 @@ nav {
 		}
 		.line {
 			width: var(--icon-width);
-			background: #1e212c;
+			background: $color-dark;
 			height: 2px;
 			margin: 3px 0;
 			transition: all calc(var(--transition-time) + 100ms) cubic-bezier(0.9, 0, 0.33, 1);
@@ -230,21 +240,21 @@ nav {
         order: 3;
     }
     .btn__link{
-        color: #fff;
-        background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+        color: $color-white;
+        background: $bg-link;
         @include max-screen(440px){
             display: none;
         }
         &:hover{
-            background: #fff;
-            color: #f75e05;
+            background: $color-white;
+            color: $color-orange;
         }
     }
     .login__link{
-        display: inline-flex;
+        display: $display-link-flex;
         align-items: center;
         &::before{
-            display: inline-block;
+            display: $display-link;
             content: "";
             background-image: url(../images/Profile.svg);
             width: 20px;
@@ -258,7 +268,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: $width-img;
     height: 100%;
     background: rgba(30, 33, 44, 0.75);
     justify-content: center;
@@ -271,69 +281,69 @@ nav {
 .modal {
     padding: 48px 48px 0;
     h1{
-        font-weight: 700;
+        font-weight: $font-weight-bold;
         font-size: 28px;
-        line-height: 150%;
-        text-align: center;
-        margin-bottom: 24px;
-        color: #1e212c;
+        line-height: $line-height-base;
+        text-align: $text-align-primary;
+        margin-bottom: $mb-title;
+        color: $color-dark;
     }
     .modal-text{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        text-align: center;
-        color: #787a80;
-        margin-bottom: 24px;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        text-align: $text-align-primary;
+        color: $color-gray-light;
+        margin-bottom: $mb-title;
     }
 }
 .modal-wrapper{
     border: 1px solid #e5e8ed;
     max-width: 486px;
-    border-radius: 4px;
+    border-radius: $b-radius-base;
     box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(30, 33, 44, 0.08), 0 26px 24px -10px rgba(30, 33, 44, 0.1), 0 60px 80px -20px rgba(30, 33, 44, 0.16);
-    background: #fff;
+    background: $color-white;
     max-height: 100vh;
     overflow-y: auto;
 }
 .input__modal{
     max-width: 390px;
-    width: 100%;
+    width: $width-img;
     margin-bottom: 20px;
     label{
-        display: inline-block;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        color: #424551;
-        margin-bottom: 8px;
+        display: $display-link;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        color: $color-gray;
+        margin-bottom: $mb-text;
     }
     div{
         display: flex;
         justify-content: space-between;
         border: 1px solid #d7dadd;
-        border-radius: 4px;
-        width: 100%;
+        border-radius: $b-radius-base;
+        width: $width-img;
         input{
             border: none;
-            width: 100%;
+            width: $width-img;
             padding: 11px 16px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 150%;
+            font-weight: $font-weight-regular;
+            font-size: $font-size-sm;
+            line-height: $line-height-base;
             color: #9a9ca5;
             &:focus{
                 outline: none;
             }
         }
         button{
-            background: #fff;
+            background: $color-white;
             padding: 15px;
             border: none;
             cursor: pointer;
             &::after{
                 content: "";
-                display: inline-block;
+                display: $display-link;
                 width: 16px;
                 height: 16px;
                 background-image: url(../images/eye.svg);
@@ -341,26 +351,24 @@ nav {
         }
     }
     input{
-        border-radius: 4px;
+        border-radius: $b-radius-base;
         border: 1px solid #d7dadd;
-        width: 100%;
+        width: $width-img;
         padding: 11px 16px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
         color: #9a9ca5;
     }
 }
 .check-link{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include space-between();
     a{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        color: #ff3f3a;
-        margin-bottom: 24px;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        color: $color-primary;
+        margin-bottom: $mb-title;
     }
 }
 .check-box {
@@ -369,7 +377,7 @@ nav {
     gap: 12px;
     max-width: 315px;
     cursor: pointer;
-    margin-bottom: 24px;
+    margin-bottom: $mb-title;
   
     input[type="checkbox"] {
       position: absolute;
@@ -380,10 +388,10 @@ nav {
     &__custom {
     width: 16px;
     height: 16px;
-    border: 1px solid #ff3f3a;
-    border-radius: 4px;
-    display: inline-block;
-    background: #ff3f3a;
+    border: 1px solid $color-primary;
+    border-radius: $b-radius-base;
+    display: $display-link;
+    background: $color-primary;
     position: relative;
     flex-shrink: 0;
     }
@@ -395,61 +403,60 @@ nav {
           left: 4px;
           width: 4px;
           height: 8px;
-          border: solid #fff;
+          border: solid $color-white;
           border-width: 0 2px 2px 0;
           transform: rotate(45deg);
           }
     }
     &__text {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 160%;
-      color: #424551;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-base;
+      line-height: $line-height-md;
+      color: $color-gray;
     }
 }
 .modal-link{
-    display: inline-block;
-    font-size: 14px;
+    display: $display-link;
+    font-size: $font-size-sm;
     line-height: 314%;
     letter-spacing: 0.04em;
-    color: #fff;
-    background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+    color: $color-white;
+    background: $bg-link;
     padding: 0 32px;
-    margin-bottom: 24px;
-    width: 100%;
+    margin-bottom: $mb-title;
+    width: $width-img;
     &:hover{
-        background: #fff;
-        color: #f75e05;
+        background: $color-white;
+        color: $color-orange;
     }
 }
 .modal-up, .link-up{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    margin-bottom: 24px;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+    margin-bottom: $mb-title;
 }
 .modal-up{
     p{
-        color: #424551;
+        color: $color-gray;
     }
     a{
-        color: #ff3f3a;
+        color: $color-primary;
     }
 }
 .sign-social{
     border-top: 1px solid #e5e8ed;
     padding-top: 24px;
     p{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        text-align: center;
-        color: #787a80;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        text-align: $text-align-primary;
+        color: $color-gray-light;
         margin-bottom: 16px;
     }
     ul{
-        display: flex;
-        justify-content: center;
+        @include flex-center();
         gap: 12px;
         margin-bottom: 48px;
     }
@@ -485,55 +492,51 @@ nav {
 .close-btn {
     cursor: pointer;
     float: right;
-    font-size: 20px;
+    font-size: $font-size-md;
 }
 .courses{
     h6, h3{
-        text-align: center;
+        text-align: $text-align-primary;
     }
 }
 .courses__nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+    @include space-between();
+    margin-bottom: $mb-adaptive;
     @include max-screen(1024px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
         gap: 20px;
     }
 }
 .courses__menu{
     display: flex;
     @include max-screen(440px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
     }
     p{
         padding: 10px 20px;
-        border-radius: 4px;
+        border-radius: $b-radius-base;
         border: 1px solid transparent;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 160%;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-base;
+        line-height: $line-height-md;
         &:hover{
-            border: 1px solid #ff3f3a;
+            border: 1px solid $color-primary;
         }
         sup{
-            font-weight: 900;
+            font-weight: $font-weight-black;
             font-size: 10px;
-            line-height: 150%;
+            line-height: $line-height-base;
             margin-left: 4px;
         }
     }
     p, sup{
-        text-align: center;
-        transition: 0.3s;
+        text-align: $text-align-primary;
+        transition: $transition-regular;
         color: #9a9ca5;
         &:hover{
-            color: #ff3f3a;
+            color: $color-primary;
             sup{
-                color: #ff3f3a;
+                color: $color-primary;
             }
         }
     }
@@ -542,28 +545,28 @@ nav {
     display: flex;
     justify-content: space-between;
     border: 1px solid #9a9ca5;
-    border-radius: 4px;
+    border-radius: $b-radius-base;
     width: 315px;
     input{
         padding: 11px 16px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
         color: #9a9ca5;
         border: none;
-        width: 100%;
+        width: $width-img;
         &:focus{
             outline: none;
         }
     }
     button{
-        background: #fff;
+        background: $color-white;
         padding: 15px;
         border: none;
         cursor: pointer;
         &::after{
             content: "";
-            display: inline-block;
+            display: $display-link;
             width: 16px;
             height: 16px;
             background-image: url(../images/magn_glass.svg);
@@ -572,46 +575,45 @@ nav {
 }
 .courses__cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-wrap();
     gap: 30px;
     margin-bottom: 80px;
 }
 .courses__cards-item{
     max-width: 390px;
-    border-radius: 4px;
+    border-radius: $b-radius-base;
     border: 1px solid #e5e8ed;
     box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px 
                                rgba(154, 156, 165, 0.04), 0 30px 24px -10px 
                                rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
     img{
-        width: 100%;
+        width: $width-img;
     }
 }
 .teachers__card-describe{
     padding: 24px;
     .proff{
-        display: inline-block;
+        display: $display-link;
         padding: 1px 8px;
-        color: #fff;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        border-radius: 4px;
+        color: $color-white;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        border-radius: $b-radius-base;
         margin-bottom: 20px;
     }
     p{
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 150%;
-        color: #1e212c;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-md;
+        line-height: $line-height-base;
+        color: $color-dark;
         margin-bottom: 20px;
     }
     span{
-        display: inline-flex;
+        display: $display-link-flex;
         align-items: center;
         font-size: 18px;
-        line-height: 150%;
+        line-height: $line-height-base;
     }
 }
 .marketing{
@@ -630,35 +632,33 @@ nav {
     background: #7772f1;
 }
 .price{
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     color: #ff4242;
 }
 .name{
-    font-weight: 400;
-    color: #787a80;
+    font-weight: $font-weight-regular;
+    color: $color-gray-light;
     &::before{
         content: "";
-        border: 1px solid #787a80;
+        border: 1px solid $color-gray-light;
         width: 16px;
         transform: rotate(-90deg);
     }
 }
 .link__bottom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #424551;
-    font-weight: 700;
+    @include flex-center();
+    color: $color-gray;
+    font-weight: $font-weight-bold;
     gap: 16px;
-    font-size: 16px;
-    line-height: 160%;
-    margin-bottom: 120px;
+    font-size: $font-size-base;
+    line-height: $line-height-md;
+    margin-bottom: $mb-section;
     @include max-screen(440px){
-        margin-bottom: 60px;
+        margin-bottom: $mb-adaptive;
     }
     &::before{
         content: "";
-        display: inline-block;
+        display: $display-link;
         background-image: url(../images/arrows_circle.svg);
         width: 24px;
         height: 24px;
@@ -668,29 +668,29 @@ nav {
 .comment{
     background-color: #f4f5f6;
     padding: 180px 0 160px;
-    margin-bottom: 120px;
+    margin-bottom: $mb-section;
     @include max-screen(414px){
         display: none;
     }
     h6, h3{
-        text-align: center;
+        text-align: $text-align-primary;
     }
 }
 .comment__item{
     max-width: 1020px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: $color-white;
     padding: 64px 105px;
     .comment__text{
         position: relative;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-        color: #424551;
-        margin-bottom: 24px;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-md;
+        line-height: $line-height-base;
+        color: $color-gray;
+        margin-bottom: $mb-title;
         &::before{
             content: "";
-            display: inline-block;
+            display: $display-link;
             background-image: url(../images/braces.svg);
             width: 28px;
             height: 20px;
@@ -709,46 +709,43 @@ nav {
     align-items: center;
     gap: 20px;
     p{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 160%;
-        color: #1e212c;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-base;
+        line-height: $line-height-md;
+        color: $color-dark;
         margin-bottom: 4px;
     }
     span{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-        color: #787a80;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: $line-height-base;
+        color: $color-gray-light;
     }
 }
 .certificate{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 120px;
+    @include space-between();
+    margin-bottom: $mb-section;
     @include max-screen(1024px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
         gap: 50px;
     }
     @include max-screen(440px){
-        margin-bottom: 60px;
+        margin-bottom: $mb-adaptive;
     }
 }
 .certificate__info{
     max-width: 395px;
     @include max-screen(1024px){
-        text-align: center;
+        text-align: $text-align-primary;
     }
     h3{
         margin-bottom: 48px;
     }
     p{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #424551;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-base;
+        line-height: $line-height-md;
+        color: $color-gray;
         margin-bottom: 32px;
     }
 }
@@ -757,13 +754,12 @@ nav {
     align-items: center;
     gap: 40px;
     @include max-screen(390px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
     }
 }
 .certificate__photo{
     max-width: 705px;
-    width: 100%;
+    width: $width-img;
 }
 .form__item{
     background-color: #ffd6cf;
@@ -775,7 +771,7 @@ nav {
 .form__item-title{
     max-width: 810px;
     margin: 0 auto;
-    text-align: center;
+    text-align: $text-align-primary;
     h3{
         @include max-screen(360px){
             font-size: 40px;
@@ -785,48 +781,44 @@ nav {
 .createx__form{
     max-width: 600px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include space-between();
     @include max-screen(440px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
         gap: 15px;
     }
     input{
         border: 1px solid #d7dadd;
-        border-radius: 4px;
+        border-radius: $b-radius-base;
         padding: 13px 16px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-base;
+        line-height: $line-height-md;
         color: #9a9ca5;
         max-width: 422px;
-        width: 100%;
+        width: $width-img;
         @include max-screen(414px){
             max-width: 310px;
         }
     }
     button{
-        background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
-        color: #fff;
-        transition: 0.3s;
+        background: $bg-link;
+        color: $color-white;
+        transition: $transition-regular;
         &:hover{
-            background: #fff;
-            color: #f75e05;
+            background: $color-white;
+            color: $color-orange;
         }
     }
 }
 .wrapper{
-    background: linear-gradient(to bottom, #1e212c 85.35%, #2c2f3c 14.65%);
+    background: linear-gradient(to bottom, $color-dark 85.35%, #2c2f3c 14.65%);
 }
 .footer__wrapper{
     padding: 80px 0 60px;
     display: flex;
     justify-content: space-between;
     @include max-screen(834px){
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-wrap();
         gap: 40px;
     }
     @include max-screen(440px){
@@ -836,13 +828,13 @@ nav {
 .footer__info{
     max-width: 275px;
     img{
-        margin-bottom: 24px;
+        margin-bottom: $mb-title;
     }
     p{
-        font-weight: 400;
+        font-weight: $font-weight-regular;
         font-size: 12px;
-        line-height: 150%;
-        color: #fff;
+        line-height: $line-height-base;
+        color: $color-white;
         opacity: 0.6;
         margin-bottom: 38px;
     }
@@ -855,7 +847,7 @@ nav {
 .footer__list{
     max-width: 157px;
     h6{
-        color: #fff;
+        color: $color-white;
         margin-bottom: 12px;
     }
     li{
@@ -863,19 +855,19 @@ nav {
     }
     a{
         opacity: 0.6;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #fff;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-base;
+        line-height: $line-height-md;
+        color: $color-white;
     }
 }
 .footer__phone,
 .footer__mail{
-    display: inline-flex;
+    display: $display-link-flex;
     align-items: center;
     gap: 8px;
     &::before{
-        display: inline-block;
+        display: $display-link;
         content: "";
         width: 16px;
         height: 16px;
@@ -894,25 +886,25 @@ nav {
 .footer__form{
     max-width: 286px;
     h6{
-        color: #fff;
-        margin-bottom: 24px;
+        color: $color-white;
+        margin-bottom: $mb-title;
     }
     form{
         display: flex;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 4px;
+        border-radius: $b-radius-base;
         margin-bottom: 12px;
     }
     input{
         padding: 9px 12px;
-        font-weight: 400;
+        font-weight: $font-weight-regular;
         font-size: 12px;
         background: rgba(255, 255, 255, 0.12);
-        line-height: 150%;
+        line-height: $line-height-base;
         opacity: 0.6;
         border: none;
-        color: #fff;
-        width: 100%;
+        color: $color-white;
+        width: $width-img;
         &:focus{
             outline: none;
         }
@@ -924,10 +916,10 @@ nav {
         border: none;
     }
     small{
-        font-weight: 400;
+        font-weight: $font-weight-regular;
         font-size: 10px;
-        line-height: 150%;
-        color: #fff;
+        line-height: $line-height-base;
+        color: $color-white;
     }
 }
 .facebook__link{
@@ -973,20 +965,19 @@ nav {
     }
 }
 .copyright{
-    display: flex;
-    justify-content: space-between;
+    @include space-between();
     padding: 20px 0;
     @include max-screen(390px){
         display: block;
-        text-align: center;
+        text-align: $text-align-primary;
     }
 }
 .copyright__left{
     p, span{
-        font-weight: 400;
+        font-weight: $font-weight-regular;
         font-size: 12px;
-        line-height: 150%;
-        color: #fff;
+        line-height: $line-height-base;
+        color: $color-white;
     }
     p{
         display: flex;
@@ -998,10 +989,10 @@ nav {
     }
 }
 .copyright__item{
-    display: inline-flex;
+    display: $display-link-flex;
     align-items: center;
     &::after{
-        display: inline-block;
+        display: $display-link;
         content: "";
         background-image: url(../images/heart.svg);
         width: 16px;
@@ -1010,9 +1001,9 @@ nav {
     }
 }
 .copyright__right{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
     opacity: 0.6;
-    color: #fff;
+    color: $color-white;
 }
