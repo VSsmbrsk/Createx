@@ -104,7 +104,6 @@ $('.plays').slick({
     ]
 });
 $(document).ready(function () {
-  // Load previously opened FAQ from localStorage
   const openId = localStorage.getItem("openFaqId");
   if (openId) {
     const $item = $(`.faq-item[data-id="${openId}"]`);
@@ -115,18 +114,14 @@ $(document).ready(function () {
   $(".faq-question").on("click", function () {
     const $item = $(this).closest(".faq-item");
 
-    // Collapse all others
     $(".faq-item").not($item).removeClass("active").find(".faq-answer").slideUp();
 
-    // Toggle this one
     $item.toggleClass("active");
     $item.find(".faq-answer").slideToggle();
 
-    // Save to localStorage if open
     if ($item.hasClass("active")) {
       localStorage.setItem("openFaqId", $item.data("id"));
 
-      // Scroll smoothly to opened FAQ
       $('html, body').animate({
         scrollTop: $item.offset().top - 20
       }, 500);
@@ -137,54 +132,47 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const modalLogin = document.getElementById('modalOverlay'); // твой Sign in
-    const modalSignup = document.getElementById('modalSignup'); // новый Sign up
+    const modalLogin = document.getElementById('modalOverlay'); 
+    const modalSignup = document.getElementById('modalSignup'); 
 
     const linkToSignup = modalLogin?.querySelector('.link-up');
     const linkToLogin = modalSignup?.querySelector('.link-in');
 
     const closeButtons = document.querySelectorAll('[data-close], #closeModal');
 
-    // Открытие модалки
     function openModal(modal) {
         if (!modal) return;
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
     }
 
-    // Закрытие модалки
     function closeModal(modal) {
         if (!modal) return;
         modal.classList.remove('open');
         document.body.style.overflow = '';
     }
 
-    // Закрыть все
     function closeAllModals() {
         closeModal(modalLogin);
         closeModal(modalSignup);
     }
 
-    // Переключение Sign in → Sign up
     linkToSignup?.addEventListener('click', function (e) {
         e.preventDefault();
         closeModal(modalLogin);
         openModal(modalSignup);
     });
 
-    // Переключение Sign up → Sign in
     linkToLogin?.addEventListener('click', function (e) {
         e.preventDefault();
         closeModal(modalSignup);
         openModal(modalLogin);
     });
 
-    // Закрытие по крестику
     closeButtons.forEach(btn => {
         btn.addEventListener('click', () => closeAllModals());
     });
 
-    // Закрытие по клику на overlay
     [modalLogin, modalSignup].forEach(modal => {
         modal?.addEventListener('click', (e) => {
             if (e.target === modal) {
@@ -193,14 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Закрытие по Esc
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeAllModals();
         }
     });
 
-    // Пример открытия Sign in (можешь привязать к своей кнопке в шапке)
     document.querySelector('.login__link')?.addEventListener('click', function (e) {
         e.preventDefault();
         openModal(modalLogin);
