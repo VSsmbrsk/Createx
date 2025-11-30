@@ -94,7 +94,7 @@ a{
     line-height: $line-height-md;
     color: $color-gray;
 }
-.nav__links.active{
+.nav__link.active{
     color: $color-orange;
 }
 nav {
@@ -815,8 +815,11 @@ nav {
         }
     }
 }
-.event__form{
+.event__form--bg{
     background: #f4f5f6;
+}
+.event__form{
+    padding: 60px 0;
     @include space-between();
     margin-bottom: $mb-section;
     @include max-screen(1024px){
@@ -1122,6 +1125,9 @@ nav {
     color: $color-dark;
     &:hover{
         color: $color-orange;
+        &::after{
+            margin-left: 12px;
+        }
     }
     &::after{
         content: "";
@@ -1130,6 +1136,7 @@ nav {
         width: 24px;
         height: 24px;
         margin-left: 8px;
+        transition: 0.3s ease;
     }
 }
 .options{

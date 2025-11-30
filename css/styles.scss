@@ -64,12 +64,14 @@ a{
     padding: 0 40px;
     border: 1px solid $color-orange;
 }
+.box__bg{
+    background: #ffd6cf;
+}
 .box{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding-top: 20px;
-    background: #ffd6cf;
+    padding: 20px 15px 0;
     @include max-screen(1024px){
         align-items: baseline;
     }
@@ -1043,10 +1045,12 @@ nav {
         }
     }
 }
+.certificate__bg{
+    background: linear-gradient(to bottom, $color-white 90%, #f4f5f6 10%);
+}
 .certificate{
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, $color-white 90%, #f4f5f6 10%);
     @include max-screen(1024px){
         @include flex-wrap();
         gap: 50px;

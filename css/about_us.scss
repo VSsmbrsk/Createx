@@ -94,7 +94,7 @@ a{
     line-height: $line-height-md;
     color: $color-gray;
 }
-.nav__links.active{
+.nav__link.active{
     color: $color-orange;
 }
 nav {
@@ -723,6 +723,7 @@ nav {
         }
         &:hover{
             color: $color-primary;
+            gap: 12px;
         }
     }
 }
@@ -1001,8 +1002,10 @@ nav {
         color: $color-gray-light;
     }
 }
-.jobs{
+.jobs__bg{
     background-color: #f4f5f6;
+}
+.jobs{
     padding-bottom: 100px;
     margin-bottom: 100px;
     @include max-screen(440px){
@@ -1176,6 +1179,9 @@ nav {
     color: $color-dark;
     &:hover{
         color: $color-orange;
+        &::after{
+            margin-left: 12px;
+        }
     }
     &::after{
         content: "";
@@ -1184,6 +1190,7 @@ nav {
         width: 24px;
         height: 24px;
         margin-left: 8px;
+        transition: 0.3s ease;
     }
 }
 .option{

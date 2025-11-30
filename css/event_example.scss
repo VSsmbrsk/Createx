@@ -64,12 +64,14 @@ a{
     padding: 0 40px;
     border: 1px solid $color-orange;
 }
+.box__bg{
+    background: #ffd6cf;
+}
 .box{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding-top: 20px;
-    background: #ffd6cf;
+    padding: 20px 15px 0;
     @include max-screen(1024px){
         align-items: baseline;
     }
@@ -747,9 +749,11 @@ nav {
         }
     }
 }
+.event__form--bg{
+    background: #ffd6cf;
+}
 .event__form{
     padding: 60px 103px;
-    background: #ffd6cf;
     display: flex;
     justify-content: space-between;
     margin-bottom: $mb-section;
