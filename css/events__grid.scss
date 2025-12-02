@@ -731,10 +731,51 @@ nav {
     }
 }
 .form__item{
+    position: relative;
     background-color: #ffd6cf;
     padding: 120px 0 180px;
+    &::before{
+        content: "";
+        display: $display-link;
+        background-image: url(../images/pict-form.png);
+        width: 354px;
+        height: 254px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        @include max-screen(1300px){
+            background-image: url(../images/pict-form-md.png);
+            width: 244px;
+            height: 170px;
+        } 
+         @include max-screen(768px){
+            display: none;
+        } 
+    }
+    &::after{
+        content: "";
+        display: $display-link;
+        background-image: url(../images/pict-form.png);
+        width: 354px;
+        height: 254px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        @include max-screen(1300px){
+            background-image: url(../images/pict-form-md.png);
+            width: 244px;
+            height: 170px;
+        } 
+         @include max-screen(768px){
+            display: none;
+        } 
+    }
     @include max-screen(440px){
-        padding: 60px 0;
+        padding: 50px 0;
     }
 }
 .form__item-title{
