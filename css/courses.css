@@ -340,7 +340,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .input__modal div input:focus {
   outline: none;
@@ -366,7 +366,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 
 .check-link {
@@ -439,7 +439,8 @@ nav.sub-menu-open .nav-links li {
   color: #f75e05;
 }
 
-.modal-up, .link-up {
+.modal-up,
+.link-up {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -495,7 +496,8 @@ nav.sub-menu-open .nav-links li {
   font-size: 20px;
 }
 
-.courses h6, .courses h3 {
+.courses h6,
+.courses h3 {
   text-align: center;
 }
 
@@ -515,6 +517,7 @@ nav.sub-menu-open .nav-links li {
 
 .courses__menu {
   display: flex;
+  gap: 10px;
 }
 @media screen and (max-width: 440px) {
   .courses__menu {
@@ -529,6 +532,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
+  cursor: pointer;
 }
 .courses__menu p:hover {
   border: 1px solid #ff3f3a;
@@ -539,39 +543,50 @@ nav.sub-menu-open .nav-links li {
   line-height: 150%;
   margin-left: 4px;
 }
-.courses__menu p, .courses__menu sup {
+.courses__menu p,
+.courses__menu sup {
   text-align: center;
   transition: 0.3s;
   color: #9a9ca5;
 }
-.courses__menu p:hover, .courses__menu sup:hover {
+.courses__menu p:hover,
+.courses__menu sup:hover {
   color: #ff3f3a;
 }
-.courses__menu p:hover sup, .courses__menu sup:hover sup {
+.courses__menu p:hover sup,
+.courses__menu sup:hover sup {
+  color: #ff3f3a;
+}
+.courses__menu .active {
+  border: 1px solid #ff3f3a;
+  color: #ff3f3a;
+}
+.courses__menu .active sup {
   color: #ff3f3a;
 }
 
 .courses__form {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid #9a9ca5;
+  align-items: center;
+  border: 1px solid #d7dadd;
   border-radius: 4px;
   width: 315px;
+  overflow: hidden;
 }
 .courses__form input {
   padding: 11px 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
+  flex: 1;
   border: none;
-  width: 100%;
 }
 .courses__form input:focus {
   outline: none;
 }
 .courses__form button {
-  background: #fff;
+  background: transparent;
   padding: 15px;
   border: none;
   cursor: pointer;
@@ -582,6 +597,9 @@ nav.sub-menu-open .nav-links li {
   width: 16px;
   height: 16px;
   background-image: url(../images/magn_glass.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .courses__cards {
@@ -700,7 +718,8 @@ nav.sub-menu-open .nav-links li {
     display: none;
   }
 }
-.comment h6, .comment h3 {
+.comment h6,
+.comment h3 {
   text-align: center;
 }
 
@@ -899,7 +918,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #9a9ca5;
+  color: #1e212c;
   max-width: 422px;
   width: 100%;
 }
@@ -976,6 +995,9 @@ nav.sub-menu-open .nav-links li {
   font-size: 16px;
   line-height: 160%;
   color: #fff;
+}
+.footer__list a:hover {
+  opacity: 1;
 }
 
 .footer__phone,
@@ -1077,7 +1099,8 @@ nav.sub-menu-open .nav-links li {
   }
 }
 
-.copyright__left p, .copyright__left span {
+.copyright__left p,
+.copyright__left span {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -1113,4 +1136,5 @@ nav.sub-menu-open .nav-links li {
   line-height: 150%;
   opacity: 0.6;
   color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=courses.css.map */

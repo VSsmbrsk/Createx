@@ -343,7 +343,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .input__modal div input:focus {
   outline: none;
@@ -369,7 +369,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 
 .check-link {
@@ -825,7 +825,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #9a9ca5;
+  color: #1e212c;
   max-width: 422px;
   width: 100%;
 }
@@ -932,7 +932,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .register__form-item a {
   width: 100%;
@@ -1167,6 +1167,9 @@ nav.sub-menu-open .nav-links li {
   line-height: 160%;
   color: #fff;
 }
+.footer__list a:hover {
+  opacity: 1;
+}
 
 .footer__phone,
 .footer__mail {
@@ -1303,4 +1306,5 @@ nav.sub-menu-open .nav-links li {
   line-height: 150%;
   opacity: 0.6;
   color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=event_example.css.map */

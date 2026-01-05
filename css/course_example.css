@@ -343,7 +343,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .input__modal div input:focus {
   outline: none;
@@ -369,7 +369,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 
 .check-link {
@@ -898,7 +898,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .sale__form a, .register__form-item a {
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
@@ -1417,6 +1417,9 @@ nav.sub-menu-open .nav-links li {
   line-height: 160%;
   color: #fff;
 }
+.footer__list a:hover {
+  opacity: 1;
+}
 
 .footer__phone,
 .footer__mail {
@@ -1553,4 +1556,5 @@ nav.sub-menu-open .nav-links li {
   line-height: 150%;
   opacity: 0.6;
   color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=course_example.css.map */

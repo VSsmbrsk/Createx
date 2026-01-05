@@ -340,7 +340,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 .input__modal div input:focus {
   outline: none;
@@ -366,7 +366,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 
 .check-link {
@@ -684,7 +684,7 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
 }
 
 .message__input-big {
@@ -708,7 +708,8 @@ nav.sub-menu-open .nav-links li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #9a9ca5;
+  color: #1e212c;
+  font-family: "Lato", sans-serif;
 }
 
 .checkbutton {
@@ -836,6 +837,9 @@ nav.sub-menu-open .nav-links li {
   font-size: 16px;
   line-height: 160%;
   color: #fff;
+}
+.footer__list a:hover {
+  opacity: 1;
 }
 
 .footer__phone,
@@ -973,4 +977,5 @@ nav.sub-menu-open .nav-links li {
   line-height: 150%;
   opacity: 0.6;
   color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=contacts.css.map */

@@ -1,640 +1,1054 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Createx</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="box__bg">
-            <div class="container box">
-                <a class="logo" href="index.html"><img src="images/logo.svg" alt="Createx logo"></a>
-            <nav>
-                <div class="menu-btn">
-                    <div class="line line__1"></div>
-                    <div class="line line__2"></div>
-                    <div class="line line__3"></div>
-                </div>
-                <div class="sub-menu-btn">
-                    <div class="line line__1"></div>
-                    <div class="line line__2"></div>
-                </div>
-            
-                <ul class="nav-links nav-list">
-                    <li><a class="nav__link" href="about_us.html">About Us</a></li>
-                    <li><a class="nav__link" href="courses.html">Courses</a></li>
-                    <li><a class="nav__link" href="events__list.html">Events</a></li>
-                    <li><a class="nav__link" href="blog.html">Blog</a></li>
-                    <li><a class="nav__link" href="contacts.html">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="box__links">
-                <a href="#" class="btn__link link">Get consultation</a>
-                <a href="#" class="login__link">Login / Register</a>
+      <div class="box__bg">
+        <div class="container box">
+          <a class="logo" href="index.html"
+            ><img src="images/logo.svg" alt="Createx logo"
+          /></a>
+          <nav>
+            <div class="menu-btn">
+              <div class="line line__1"></div>
+              <div class="line line__2"></div>
+              <div class="line line__3"></div>
             </div>
+            <div class="sub-menu-btn">
+              <div class="line line__1"></div>
+              <div class="line line__2"></div>
             </div>
+
+            <ul class="nav-links nav-list">
+              <li><a class="nav__link" href="about_us.html">About Us</a></li>
+              <li><a class="nav__link" href="courses.html">Courses</a></li>
+              <li><a class="nav__link" href="events__list.html">Events</a></li>
+              <li><a class="nav__link" href="blog.html">Blog</a></li>
+              <li><a class="nav__link" href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="box__links">
+            <a href="#" class="btn__link link">Get consultation</a>
+            <a href="#" class="login__link">Login / Register</a>
+          </div>
         </div>
+      </div>
     </header>
     <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-wrapper">
-            <div class="modal">
-                <span class="close-btn" id="closeModal">&times;</span>
-                <h1>Sign in</h1>
-                <p class="modal-text">Sign in to your account using email and password provided during registration.</p>
-                <div class="input__modal">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Your working email">
-                </div>
-                <div class="input__modal">
-                    <label for="password">Password</label>
-                    <div>
-                        <input type="password" name="password" placeholder="Password">
-                        <button type="submit"></button>
-                    </div>
-                </div>
-                <div class="check-link">
-                    <label class="check-box">
-                        <input type="checkbox" required checked />
-                        <span class="check-box__custom"></span>
-                        <span class="check-box__text">
-                          Keep me signed in
-                        </span>
-                    </label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <a class="modal-link link" href="#">Sign in</a>
-                <p class="modal-up">Don't have an account? <a class="link-up" href="#">Sign up</a></p>
+      <div class="modal-wrapper">
+        <div class="modal">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h1>Sign in</h1>
+          <p class="modal-text">
+            Sign in to your account using email and password provided during
+            registration.
+          </p>
+          <div class="input__modal">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Your working email" />
+          </div>
+          <div class="input__modal">
+            <label for="password">Password</label>
+            <div>
+              <input type="password" name="password" placeholder="Password" />
+              <button type="submit"></button>
             </div>
-            <div class="sign-social">
-                <p>Or sign in with</p>
-                <ul>
-                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
-                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
-                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="check-link">
+            <label class="check-box">
+              <input type="checkbox" required checked />
+              <span class="check-box__custom"></span>
+              <span class="check-box__text"> Keep me signed in </span>
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <a class="modal-link link" href="#">Sign in</a>
+          <p class="modal-up">
+            Don't have an account? <a class="link-up" href="#">Sign up</a>
+          </p>
         </div>
+        <div class="sign-social">
+          <p>Or sign in with</p>
+          <ul>
+            <li>
+              <a
+                class="modal-facebook"
+                href="#"
+                target="_blank"
+                title="Facebook"
+                ><img src="images/facebook.svg" alt="Facebook logo"
+              /></a>
+            </li>
+            <li>
+              <a class="modal-google" href="#" target="_blank" title="Google"
+                ><img src="images/google.svg" alt="Google logo"
+              /></a>
+            </li>
+            <li>
+              <a class="modal-twitter" href="#" target="_blank" title="Twitter"
+                ><img src="images/twitter_post.svg" alt="Twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="modal-linkedin"
+                href="#"
+                target="_blank"
+                title="LinkedIn"
+                ><img src="images/linkedin.svg" alt="LinkedIn logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="modal-overlay" id="modalSignup">
-        <div class="modal-wrapper">
-            <div class="modal">
-                <span class="close-btn" data-close>&times;</span>
-                <h1>Sign up</h1>
-                <p class="modal-text">Registration takes less than a minute but gives you full control over your studying.</p>
-    
-                <div class="input__modal">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" placeholder="Your full name">
-                </div>
-                <div class="input__modal">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Your working email">
-                </div>
-                <div class="input__modal">
-                    <label for="password">Password</label>
-                    <div>
-                        <input type="password" name="password" placeholder="Password">
-                        <button type="submit"></button>
-                    </div>
-                </div>
-                <div class="input__modal">
-                    <label for="confirm">Confirm Password</label>
-                    <div>
-                        <input type="password" name="confirm password" placeholder="Confirm password">
-                        <button type="submit"></button>
-                    </div>
-                </div>
-                <label class="check-box">
-                    <input type="checkbox" required checked />
-                    <span class="check-box__custom"></span>
-                    <span class="check-box__text">
-                      Remember me
-                    </span>
-                </label>
-                <a class="modal-link link" href="#">Sign up</a>
-                <p class="modal-up">Already have an account? <a class="link-in" href="#">Sign in</a></p>
+      <div class="modal-wrapper">
+        <div class="modal">
+          <span class="close-btn" data-close>&times;</span>
+          <h1>Sign up</h1>
+          <p class="modal-text">
+            Registration takes less than a minute but gives you full control
+            over your studying.
+          </p>
+
+          <div class="input__modal">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" placeholder="Your full name" />
+          </div>
+          <div class="input__modal">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Your working email" />
+          </div>
+          <div class="input__modal">
+            <label for="password">Password</label>
+            <div>
+              <input type="password" name="password" placeholder="Password" />
+              <button type="submit"></button>
             </div>
-            <div class="sign-social">
-                <p>Or sign in with</p>
-                <ul>
-                    <li><a class="modal-facebook" href="#" target="_blank" title="Facebook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                    <li><a class="modal-google" href="#" target="_blank" title="Google"><img src="images/google.svg" alt="Google logo"></a></li>
-                    <li><a class="modal-twitter" href="#" target="_blank" title="Twitter"><img src="images/twitter_post.svg" alt="Twitter logo"></a></li>
-                    <li><a class="modal-linkedin" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                </ul>
+          </div>
+          <div class="input__modal">
+            <label for="confirm">Confirm Password</label>
+            <div>
+              <input
+                type="password"
+                name="confirm password"
+                placeholder="Confirm password"
+              />
+              <button type="submit"></button>
             </div>
+          </div>
+          <label class="check-box">
+            <input type="checkbox" required checked />
+            <span class="check-box__custom"></span>
+            <span class="check-box__text"> Remember me </span>
+          </label>
+          <a class="modal-link link" href="#">Sign up</a>
+          <p class="modal-up">
+            Already have an account? <a class="link-in" href="#">Sign in</a>
+          </p>
         </div>
+        <div class="sign-social">
+          <p>Or sign in with</p>
+          <ul>
+            <li>
+              <a
+                class="modal-facebook"
+                href="#"
+                target="_blank"
+                title="Facebook"
+                ><img src="images/facebook.svg" alt="Facebook logo"
+              /></a>
+            </li>
+            <li>
+              <a class="modal-google" href="#" target="_blank" title="Google"
+                ><img src="images/google.svg" alt="Google logo"
+              /></a>
+            </li>
+            <li>
+              <a class="modal-twitter" href="#" target="_blank" title="Twitter"
+                ><img src="images/twitter_post.svg" alt="Twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="modal-linkedin"
+                href="#"
+                target="_blank"
+                title="LinkedIn"
+                ><img src="images/linkedin.svg" alt="LinkedIn logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <section>
-        <div class="inform">
-            <div class="container">
-                <div class="inform__wrapper">
-                <div class="inform__text">
-                    <a href="#" class="inform__play">Play showreel</a>
-                    <h1>Enjoy studying
-                        with Createx Online Courses</h1>
-                    <div class="inform__links">
-                        <a class="link" href="about_us.html">About us</a>
-                        <a class="link" href="courses.html">Explore courses</a>
-                    </div>
-                </div>
-                <img src="images/illustration.png" alt="banner">
+      <div class="inform">
+        <div class="container">
+          <div class="inform__wrapper">
+            <div class="inform__text">
+              <a href="#" class="inform__play">Play showreel</a>
+              <h1>Enjoy studying with Createx Online Courses</h1>
+              <div class="inform__links">
+                <a class="link" href="about_us.html">About us</a>
+                <a class="link" href="courses.html">Explore courses</a>
+              </div>
             </div>
-            <div class="inform__item">
-                <div class="inform__item-block ball">
-                    <span class="inform__item-number">1200</span>
-                    <span class="inform__item-text">Students graduated</span>
-                </div>
-                <div class="inform__item-block ball">
-                    <span class="inform__item-number">84</span>
-                    <span class="inform__item-text">Completed courses</span>
-                </div>
-                <div class="inform__item-block ball">
-                    <span class="inform__item-number">16</span>
-                    <span class="inform__item-text">Qualified tutors</span>
-                </div>
-                <div class="inform__item-block">
-                    <span class="inform__item-number">5</span>
-                    <span class="inform__item-text">Years of experience</span>
-                </div>
+            <img src="images/illustration.png" alt="banner" />
+          </div>
+          <div class="inform__item">
+            <div class="inform__item-block ball">
+              <span class="inform__item-number">1200</span>
+              <span class="inform__item-text">Students graduated</span>
             </div>
+            <div class="inform__item-block ball">
+              <span class="inform__item-number">84</span>
+              <span class="inform__item-text">Completed courses</span>
             </div>
+            <div class="inform__item-block ball">
+              <span class="inform__item-number">16</span>
+              <span class="inform__item-text">Qualified tutors</span>
+            </div>
+            <div class="inform__item-block">
+              <span class="inform__item-number">5</span>
+              <span class="inform__item-text">Years of experience</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container why__createx">
-            <img src="images/girl_and_notbook.jpg" alt="girl and notebook">
+      <div class="container why__createx">
+        <img src="images/girl_and_notbook.jpg" alt="girl and notebook" />
+        <div>
+          <span>Who we are</span>
+          <h2>Why createx?</h2>
+          <ul class="why__createx-list">
+            <li>
+              A fermentum in morbi pretium aliquam adipiscing donec tempus.
+            </li>
+            <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+            <li>
+              Consequat feugiat habitant gravida quisque elit bibendum id
+              adipiscing sed.
+            </li>
+            <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+            <li>Tincidunt sagittis neque sem ac eget.</li>
+            <li>
+              Ultricies amet justo et eget quisque purus vulputate dapibus
+              tortor.
+            </li>
+          </ul>
+          <a class="link" href="about_us.html">More about us</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container teachers">
+        <div class="teachers__title">
+          <div class="teachers__text">
+            <span>Ready to learn?</span>
+            <h2>Featured Courses</h2>
+          </div>
+          <a class="link" href="courses.html">View all courses</a>
+        </div>
+        <div class="teachers__card">
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/jerome__bell.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff marketing">Marketing</span>
+              <p>The Ultimate Google Ads Training Course</p>
+              <span class="price"
+                >$100 <span class="name">by Jerome Bell</span></span
+              >
+            </div>
+          </a>
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/marwin.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff management">Management</span>
+              <p>Product Management Fundamentals</p>
+              <span class="price"
+                >$480 <span class="name">by Marvin McKinney</span></span
+              >
+            </div>
+          </a>
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/leslie_li.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff recruting">HR & Recruting</span>
+              <p>HR Management and Analytics</p>
+              <span class="price"
+                >$200 <span class="name">by Leslie Alexander Li</span></span
+              >
+            </div>
+          </a>
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/kristin.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff marketing">Marketing</span>
+              <p>Brand Management & PR Communications</p>
+              <span class="price"
+                >$530 <span class="name">by Kristin Watson</span></span
+              >
+            </div>
+          </a>
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/dianne.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff management">Management</span>
+              <p>Business Development Management</p>
+              <span class="price"
+                >$400 <span class="name">by Dianne Russell</span></span
+              >
+            </div>
+          </a>
+          <a href="course_example.html" class="teachers__card-item">
+            <img src="images/hawkins.png" alt="teacher's photo" />
+            <div class="teachers__card-describe">
+              <span class="proff design">Design</span>
+              <p>Graphic Design Basic</p>
+              <span class="price"
+                >$500 <span class="name">by Guy Hawkins</span></span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container benefits">
+        <h6>Our benefits</h6>
+        <h3>That’s how we do it</h3>
+        <div class="benefits__item">
+          <a href="#" class="benefits__item-star active">Experienced Tutors</a>
+          <a href="#" class="benefits__item-like">Feedback & Support</a>
+          <a href="#" class="benefits__item-layout">24/7 Online Library</a>
+          <a href="#" class="benefits__item-chat">Community</a>
+        </div>
+        <div class="benefits__tutors">
+          <div>
+            <h3>Only practicing tutors</h3>
+            <p>
+              Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+              dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
+              mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+              Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
+              dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+            </p>
+          </div>
+          <img src="images/illustration_two.jpg" alt="illustration" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="events">
+        <div class="container">
+          <h6>Our Events</h6>
+          <h3>Lectures & workshops</h3>
+          <div class="events__schedule">
+            <div class="events__schedule-item">
+              <div class="events__time">
+                <span class="date">05</span>
+                <div>
+                  <p class="month">August</p>
+                  <p class="timer">11:00-14:00</p>
+                </div>
+              </div>
+              <div class="events__item">
+                <p>
+                  Formation of the organizational structure of the company in
+                  the face of uncertainty.
+                </p>
+                <span>Online master-class</span>
+              </div>
+              <a class="link" href="event_example.html">View more</a>
+            </div>
+            <div class="events__schedule-item">
+              <div class="events__time">
+                <span class="date">24</span>
+                <div>
+                  <p class="month">July</p>
+                  <p class="timer">11:00-12:30</p>
+                </div>
+              </div>
+              <div class="events__item">
+                <p>Building a customer service department. Best Practices.</p>
+                <span>Online lecture</span>
+              </div>
+              <a class="link" href="event_example.html">View more</a>
+            </div>
+            <div class="events__schedule-item">
+              <div class="events__time">
+                <span class="date">16</span>
+                <div>
+                  <p class="month">July</p>
+                  <p class="timer">10:00-13:00</p>
+                </div>
+              </div>
+              <div class="events__item">
+                <p>
+                  How to apply methods of speculative design in practice.
+                  Worldbuilding prototyping.
+                </p>
+                <span>Online workshop</span>
+              </div>
+              <a class="link" href="event_example.html">View more</a>
+            </div>
+          </div>
+          <div class="events__more">
+            <p>Do you want more?</p>
+            <a class="link" href="events__list.html">Explore all events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="certificate__bg">
+        <div class="container">
+          <div class="certificate">
+            <div class="certificate__info">
+              <h6>Createx Certificate</h6>
+              <h3>Your expertise will be confirmed</h3>
+              <p>
+                We are accredited by international professional organizations
+                and institutes:
+              </p>
+              <div class="certificate__logo">
+                <img src="images/delmar.svg" alt="Del Mar Strategy logo" />
+                <img
+                  src="images/sen_consal.svg"
+                  alt="Sentinal Consulting logo"
+                />
+                <img src="images/national.svg" alt="National logo" />
+              </div>
+            </div>
+            <img
+              class="certificate__photo"
+              src="images/certificate.jpg"
+              alt="certificate"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="team">
+        <div class="container">
+          <div class="team__header">
             <div>
-                <span>Who we are</span>
-                <h2>Why createx?</h2>
-                <ul class="why__createx-list">
-                    <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                    <li>Vulputate placerat amet pulvinar lorem nisl.</li>
-                    <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                    <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                    <li>Tincidunt sagittis neque sem ac eget.</li>
-                    <li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
-                </ul>
-                <a class="link" href="about_us.html">More about us</a>
+              <h6>Best tutors are all here</h6>
+              <h3>Meet our team</h3>
             </div>
+            <div class="slick__arrows"></div>
+          </div>
+          <div class="team__squad autoplay">
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/russell.png" alt="Dianne Russell photo" />
+              </div>
+              <p>Dianne Russell</p>
+              <span>Founder and CEO</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/jerome.png" alt="Jerome Bell photo" />
+              </div>
+              <p>Jerome Bell</p>
+              <span>Founder and Program Director</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/watson.png" alt="Kristin Watson photo" />
+              </div>
+              <p>Kristin Watson</p>
+              <span>Marketer, Curator of Marketing Course</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/mckinney.png" alt="Marvin McKinney photo" />
+              </div>
+              <p>Marvin McKinney</p>
+              <span>PM, Curator of Management Course</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/leslie_team.png" alt="Dianne Russell photo" />
+              </div>
+              <p>Leslie Alexander Li</p>
+              <span>Curator of HR & Recruting Course</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/murphy_team.png" alt="Jerome Bell photo" />
+              </div>
+              <p>Kathryn Murphy</p>
+              <span>Analyst and Marketing specialist</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/simmons_team.png" alt="Kristin Watson photo" />
+              </div>
+              <p>Brooklyn Simmons</p>
+              <span>Curator of Development Course</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team__squad-item">
+              <div class="team__card">
+                <img src="images/fisher_team.png" alt="Marvin McKinney photo" />
+              </div>
+              <p>Cody Fisher</p>
+              <span>UX Designer, Curator of Design Course</span>
+              <ul class="team__icons">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    class="team__icons-fbook"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    class="team__icons-insta"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="team__icons-lindin"
+                    ><img src="images/linkedin.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container teachers">
-            <div class="teachers__title">
-                <div class="teachers__text">
-                    <span>Ready to learn?</span>
-                    <h2>Featured Courses</h2>
-                </div>
-                <a class="link" href="courses.html">View all courses</a>
-            </div>
-            <div class="teachers__card">
-                <a href="#" class="teachers__card-item">
-                    <img src="images/jerome__bell.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff marketing">Marketing</span>
-                        <p>The Ultimate Google Ads Training Course</p>
-                        <span class="price">$100 <span class="name">by Jerome Bell</span></span>
-                    </div>
-                </a>
-                <a href="#" class="teachers__card-item">
-                    <img src="images/marwin.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff management">Management</span>
-                        <p>Product Management Fundamentals</p>
-                        <span class="price">$480 <span class="name">by Marvin McKinney</span></span>
-                    </div>
-                </a>
-                <a href="#" class="teachers__card-item">
-                    <img src="images/leslie_li.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff recruting">HR & Recruting</span>
-                        <p>HR  Management and Analytics</p>
-                        <span class="price">$200 <span class="name">by Leslie Alexander Li</span></span>
-                    </div>
-                </a>
-                <a href="#" class="teachers__card-item">
-                    <img src="images/kristin.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff marketing">Marketing</span>
-                        <p>Brand Management & PR Communications</p>
-                        <span class="price">$530 <span class="name">by Kristin Watson</span></span>
-                    </div>
-                </a>
-                <a href="#" class="teachers__card-item">
-                    <img src="images/dianne.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff management">Management</span>
-                        <p>Business Development Management</p>
-                        <span class="price">$400 <span class="name">by Dianne Russell</span></span>
-                    </div>
-                </a>
-                <a href="#" class="teachers__card-item">
-                    <img src="images/hawkins.png" alt="teacher's photo">
-                    <div class="teachers__card-describe">
-                        <span class="proff design">Design</span>
-                        <p>Graphic Design Basic</p>
-                        <span class="price">$500 <span class="name">by Guy Hawkins</span></span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container benefits">
-            <h6>Our benefits</h6>
-            <h3>That’s how we do it</h3>
-            <div class="benefits__item">
-                <a href="#" class="benefits__item-star">Experienced Tutors</a>
-                <a href="#" class="benefits__item-like">Feedback & Support</a>
-                <a href="#" class="benefits__item-layout">24/7 Online Library</a>
-                <a href="#" class="benefits__item-chat">Community</a>
-            </div>
-            <div class="benefits__tutors">
+      <div class="comment">
+        <div class="container">
+          <h6>Testimonials</h6>
+          <h3>What our students say</h3>
+          <div class="owl-carousel">
+            <div class="comment__item">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="comment__client">
+                <img src="images/eleanor.svg" alt="Eleanor Pena" />
                 <div>
-                    <h3>Only practicing tutors</h3>
-                    <p>Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
+                  <p>Eleanor Pena</p>
+                  <span>Position, Course</span>
                 </div>
-                <img src="images/illustration_two.jpg" alt="illustration">
+              </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="events">
-            <div class="container">
-                <h6>Our Events</h6>
-            <h3>Lectures & workshops</h3>
-            <div class="events__schedule">
-                <div class="events__schedule-item">
-                    <div class="events__time">
-                        <span class="date">05</span>
-                        <div>
-                            <p class="month">August</p>
-                            <p class="timer">11:00-14:00</p>
-                        </div>
-                    </div>
-                    <div class="events__item">
-                        <p>Formation of the organizational structure of the company in the face of uncertainty.</p>
-                        <span>Onine master-class</span>
-                    </div>
-                    <a class="link" href="event_example.html">View more</a>
-                </div>
-                <div class="events__schedule-item">
-                    <div class="events__time">
-                        <span class="date">24</span>
-                        <div>
-                            <p class="month">July</p>
-                            <p class="timer">11:00-12:30</p>
-                        </div>
-                    </div>
-                    <div class="events__item">
-                        <p>Building a customer service department. Best Practices.</p>
-                        <span>Onine lecture</span>
-                    </div>
-                    <a class="link" href="event_example.html">View more</a>
-                </div>
-                <div class="events__schedule-item">
-                    <div class="events__time">
-                        <span class="date">16</span>
-                        <div>
-                            <p class="month">July</p>
-                            <p class="timer">10:00-13:00</p>
-                        </div>
-                    </div>
-                    <div class="events__item">
-                        <p>How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
-                        <span>Onine workshop</span>
-                    </div>
-                    <a class="link" href="event_example.html">View more</a>
-                </div>
-            </div>
-            <div class="events__more">
-                <p>Do you want more?</p>
-                <a class="link" href="events__list.html">Explore all events</a>
-            </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="certificate__bg">
-            <div class="container">
-                <div class="certificate">
-                    <div class="certificate__info">
-                <h6>Createx Certificate</h6>
-                <h3>Your expertise will be confirmed</h3>
-                <p>We are accredited by international professional organizations and institutes:</p>
-                <div class="certificate__logo">
-                    <img src="images/delmar.svg" alt="Del Mar Strategy logo">
-                    <img src="images/sen_consal.svg" alt="Sentinal Consulting logo">
-                    <img src="images/national.svg" alt="National logo">
-                </div>
-                </div>
-                <img class="certificate__photo" src="images/certificate.jpg" alt="certificate">
-            </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="team">
-            <div class="container">
-                <div class="team__header">
+            <div class="comment__item">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="comment__client">
+                <img src="images/eleanor.svg" alt="Eleanor Pena" />
                 <div>
-                    <h6>Best tutors are all here</h6>
-                    <h3>Meet our team</h3>
+                  <p>Eleanor Pena</p>
+                  <span>Position, Course</span>
                 </div>
-                <div class="slick__arrows"></div>
+              </div>
             </div>
-            <div class="team__squad autoplay">
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/russell.png" alt="Dianne Russell photo">
-                    </div>
-                    <p>Dianne Russell</p>
-                    <span>Founder and CEO</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook"  class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
+            <div class="comment__item">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="comment__client">
+                <img src="images/eleanor.svg" alt="Eleanor Pena" />
+                <div>
+                  <p>Eleanor Pena</p>
+                  <span>Position, Course</span>
                 </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/jerome.png" alt="Jerome Bell photo">
-                    </div>
-                    <p>Jerome Bell</p>
-                    <span>Founder and Program Director</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/watson.png" alt="Kristin Watson photo">
-                    </div>
-                    <p>Kristin Watson</p>
-                    <span>Marketer, Curator of Marketing Course</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/mckinney.png" alt="Marvin McKinney photo">
-                    </div>
-                    <p>Marvin McKinney</p>
-                    <span>PM, Curator of Management Course</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/leslie_team.png" alt="Dianne Russell photo">
-                    </div>
-                    <p>Leslie Alexander Li</p>
-                    <span>Curator of HR & Recruting Course</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook"  class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/murphy_team.png" alt="Jerome Bell photo">
-                    </div>
-                    <p>Kathryn Murphy</p>
-                    <span>Analyst and Marketing specialist</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/simmons_team.png" alt="Kristin Watson photo">
-                    </div>
-                    <p>Brooklyn Simmons</p>
-                    <span>Curator of Development Course</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="team__squad-item">
-                    <div class="team__card">
-                        <img src="images/fisher_team.png" alt="Marvin McKinney photo">
-                    </div>
-                    <p>Cody Fisher</p>
-                    <span>UX Designer, Curator of Design Course</span>
-                    <ul class="team__icons">
-                        <li><a href="#" target="_blank" title="Facebook" class="team__icons-fbook"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
-                        <li><a href="#" target="_blank" title="Instagram" class="team__icons-insta"><img src="images/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a href="#" target="_blank" title="LinkedIn" class="team__icons-lindin"><img src="images/linkedin.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
+              </div>
             </div>
+            <div class="comment__item">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                amet lectus quam viverra mus lobortis fermentum amet, eu.
+                Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                Pulvinar neque pharetra arcu diam maecenas diam integer in.
+              </p>
+              <div class="comment__client">
+                <img src="images/eleanor.svg" alt="Eleanor Pena" />
+                <div>
+                  <p>Eleanor Pena</p>
+                  <span>Position, Course</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="comment">
-            <div class="container">
-                <h6>Testimonials</h6>
-            <h3>What our students say</h3>
-            <div class="owl-carousel">
-                <div class="comment__item">
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
-                    <div class="comment__client">
-                        <img src="images/eleanor.svg" alt="Eleanor Pena">
-                        <div>
-                            <p>Eleanor Pena</p>
-                            <span>Position, Course</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment__item">
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
-                    <div class="comment__client">
-                        <img src="images/eleanor.svg" alt="Eleanor Pena">
-                        <div>
-                            <p>Eleanor Pena</p>
-                            <span>Position, Course</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment__item">
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
-                    <div class="comment__client">
-                        <img src="images/eleanor.svg" alt="Eleanor Pena">
-                        <div>
-                            <p>Eleanor Pena</p>
-                            <span>Position, Course</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment__item">
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
-                    <div class="comment__client">
-                        <img src="images/eleanor.svg" alt="Eleanor Pena">
-                        <div>
-                            <p>Eleanor Pena</p>
-                            <span>Position, Course</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+      <div class="container blog">
+        <div class="blog__text">
+          <div class="blog__title">
+            <h6>Our blog</h6>
+            <h3>Latest posts</h3>
+          </div>
+          <a class="link" href="blog.html">Go to blog</a>
         </div>
+        <div class="blog__posts">
+          <div class="blog__posts-item">
+            <p class="blog__text_absolute podcast">Podcast</p>
+            <img src="images/podcast.png" alt="podcast picture" />
+            <div class="posts__describe">
+              <span class="posts__item">Marketing</span>
+              <span class="posts__date">September 4, 2020</span>
+              <span class="posts__timer">36 min</span>
+            </div>
+            <p class="posts__title">
+              What is traffic arbitrage and does it really make money?
+            </p>
+            <p class="posts__text">
+              Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+              Convallis proin dignissim lacus, purus gravida...
+            </p>
+            <a href="blog_post.html" class="posts__link">Listen</a>
+          </div>
+          <div class="blog__posts-item">
+            <p class="blog__text_absolute video">Video</p>
+            <img src="images/video.png" alt="video picture" />
+            <div class="posts__describe">
+              <span class="posts__item">Management</span>
+              <span class="posts__date">August 25, 2020</span>
+              <span class="posts__timer">45 min</span>
+            </div>
+            <p class="posts__title">
+              What to do and who to talk to if you want to get feedback on the
+              product
+            </p>
+            <p class="posts__text">
+              Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac
+              nibh urna urna sagittis faucibus...
+            </p>
+            <a href="blog_post.html" class="posts__link">Watch</a>
+          </div>
+          <div class="blog__posts-item option">
+            <p class="blog__text_absolute articl">Article</p>
+            <img src="images/article.png" alt="article picture" />
+            <div class="posts__describe">
+              <span class="posts__item">Design</span>
+              <span class="posts__date">August 8, 2020</span>
+            </div>
+            <p class="posts__title">
+              Should you choose a creative profession if you are attracted to
+              creativity?
+            </p>
+            <p class="posts__text">
+              Curabitur nisl tincidunt eros venenatis vestibulum ac placerat.
+              Tortor, viverra sed vulputate ultrices...
+            </p>
+            <a href="blog_post.html" class="posts__link">Read</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-        <div class="container blog">
-            <div class="blog__text">
-                <div class="blog__title">
-                    <h6>Our blog</h6>
-                    <h3>Latest posts</h3>
-                </div>
-                <a class="link" href="blog.html">Go to blog</a>
-            </div>
-            <div class="blog__posts">
-                <div class="blog__posts-item">
-                    <p class="blog__text_absolute podcast">Podcast</p>
-                    <img src="images/podcast.png" alt="podcast picture">
-                    <div class="posts__describe">
-                        <span class="posts__item">Marketing</span>
-                        <span class="posts__date">September 4, 2020</span>
-                        <span class="posts__timer">36 min</span>
-                    </div>
-                    <p class="posts__title">What is traffic arbitrage and does it really make money?</p>
-                    <p class="posts__text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
-                    <a href="blog_post.html" class="posts__link">Listen</a>
-                </div>
-                <div class="blog__posts-item">
-                    <p class="blog__text_absolute video">Video</p>
-                    <img src="images/video.png" alt="video picture">
-                    <div class="posts__describe">
-                        <span class="posts__item">Management</span>
-                        <span class="posts__date">August 25, 2020</span>
-                        <span class="posts__timer">45 min</span>
-                    </div>
-                    <p class="posts__title">What to do and who to talk to if you want to get feedback on the product</p>
-                    <p class="posts__text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
-                    <a href="blog_post.html" class="posts__link">Watch</a>
-                </div>
-                <div class="blog__posts-item option">
-                    <p class="blog__text_absolute articl">Article</p>
-                    <img src="images/article.png" alt="article picture">
-                    <div class="posts__describe">
-                        <span class="posts__item">Design</span>
-                        <span class="posts__date">August 8, 2020</span>
-                    </div>
-                    <p class="posts__title">Should you choose a creative profession if you are attracted to creativity?</p>
-                    <p class="posts__text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
-                    <a href="blog_post.html" class="posts__link">Read</a>
-                </div>
-            </div>
+      <div class="form__item">
+        <div class="container">
+          <div class="form__item-title">
+            <h6>Don’t miss anything</h6>
+            <h3>Subscribe to the Createx School announcements</h3>
+            <form action="" method="get" class="createx__form">
+              <input
+                type="text"
+                name="email"
+                placeholder="Your working email"
+              />
+              <button class="link" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="form__item">
-            <div class="container">
-                <div class="form__item-title">
-                <h6>Don’t miss anything</h6>
-                <h3>Subscribe to the Createx School announcements</h3>
-                <form action="" method="get" class="createx__form">
-                    <input type="text" name="email" placeholder="Your working email">
-                    <button class="link" type="submit">Subscribe</button>
-                </form>
-            </div>
-            </div>
-        </div>
+      </div>
     </section>
     <footer>
-        <div class="wrapper">
-            <div class="container">
-                <div class="footer__wrapper">
-                <div class="footer__info">
-                    <a href="index.html" class="footer__logo"><img src="images/logo_footer.svg" alt="Createx logo"></a>
-                    <p>Createx Onlinse School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
-                    <ul>
-                        <li>
-                            <a class="facebook__link" href="#" target="_blank" title="Facebook"><img src="images/facebook_footer.svg" alt="Facebook logo"></a> 
-                        </li>
-                        <li><a class="twitter__link" href="#" target="_blank" title="Twitter"><img src="images/twitter.svg" alt="Twitter logo"></a></li>
-                        <li><a class="youtube__link" href="#" target="_blank" title="You Tube"><img src="images/youtube.svg" alt="You Tube logo"></a></li>
-                        <li><a class="telegram__link" href="#" target="_blank" title="Telegram"><img src="images/telegram.svg" alt="Telegram logo"></a></li>
-                        <li><a class="insta__link" href="#" target="_blank" title="Instagram"><img src="images/instagram_footer.svg" alt="Instagram logo"></a></li>
-                        <li><a class="linkedin__link" href="#" target="_blank" title="LinkedIn"><img src="images/linkedin_footer.svg" alt="LinkedIn logo"></a></li>
-                    </ul>
-                </div>
-                <div class="footer__list">
-                    <h6>Site map</h6>
-                    <ul>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="events__list.html">Events</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="footer__list">
-                    <h6>Courses</h6>
-                    <ul>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Management</a></li>
-                        <li><a href="#">HR & Recruting</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Development</a></li>
-                    </ul>
-                </div>
-                <div class="footer__list">
-                    <h6>Contact us</h6>
-                    <ul>
-                        <li><a href="tel:(405) 555-0128" class="footer__phone">(405) 555-0128</a></li>
-                        <li><a href="mailto:hello@createx.com" class="footer__mail">hello@createx.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer__form">
-                    <h6>Sign up to our newsletter</h6>
-                    <form action="" method="get">
-                        <input type="text" name="email" placeholder="Email address">
-                        <button type="submit"><img src="images/arrow_white.svg" alt="icon"></button>
-                    </form>
-                    <small>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</small>
-                </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__info">
+              <a href="index.html" class="footer__logo"
+                ><img src="images/logo_footer.svg" alt="Createx logo"
+              /></a>
+              <p>
+                Createx Online School is a leader in online studying. We have
+                lots of courses and programs from the main market experts. We
+                provide relevant approaches to online learning, internships and
+                employment in the largest companies in the country.
+              </p>
+              <ul>
+                <li>
+                  <a
+                    class="facebook__link"
+                    href="#"
+                    target="_blank"
+                    title="Facebook"
+                    ><img src="images/facebook_footer.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="twitter__link"
+                    href="#"
+                    target="_blank"
+                    title="Twitter"
+                    ><img src="images/twitter.svg" alt="Twitter logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="youtube__link"
+                    href="#"
+                    target="_blank"
+                    title="You Tube"
+                    ><img src="images/youtube.svg" alt="You Tube logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="telegram__link"
+                    href="#"
+                    target="_blank"
+                    title="Telegram"
+                    ><img src="images/telegram.svg" alt="Telegram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="insta__link"
+                    href="#"
+                    target="_blank"
+                    title="Instagram"
+                    ><img
+                      src="images/instagram_footer.svg"
+                      alt="Instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin__link"
+                    href="#"
+                    target="_blank"
+                    title="LinkedIn"
+                    ><img src="images/linkedin_footer.svg" alt="LinkedIn logo"
+                  /></a>
+                </li>
+              </ul>
             </div>
-            <div class="copyright">
-                <div class="copyright__left">
-                    <p>© All rights reserved.
-                        <span class="copyright__item">Made with</span>
-                        <span>by Createx Studio </span>
-                    </p>
-                </div>
-                <p class="copyright__right">GO TO TOP</p>
+            <div class="footer__list">
+              <h6>Site map</h6>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="events__list.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
             </div>
+            <div class="footer__list">
+              <h6>Courses</h6>
+              <ul>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">HR & Recruting</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+              </ul>
             </div>
+            <div class="footer__list">
+              <h6>Contact us</h6>
+              <ul>
+                <li>
+                  <a href="tel:(405) 555-0128" class="footer__phone"
+                    >(405) 555-0128</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:hello@createx.com" class="footer__mail"
+                    >hello@createx.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__form">
+              <h6>Sign up to our newsletter</h6>
+              <form action="" method="get">
+                <input type="text" name="email" placeholder="Email address" />
+                <button type="submit">
+                  <img src="images/arrow_white.svg" alt="icon" />
+                </button>
+              </form>
+              <small
+                >*Subscribe to our newsletter to receive communications and
+                early updates from Createx SEO Agency.</small
+              >
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="copyright__left">
+              <p>
+                © All rights reserved.
+                <span class="copyright__item">Made with</span>
+                <span>by Createx Studio </span>
+              </p>
+            </div>
+            <p class="copyright__right">GO TO TOP</p>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
