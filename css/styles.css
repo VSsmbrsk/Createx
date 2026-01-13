@@ -442,7 +442,8 @@ nav.sub-menu-open .nav-links li {
   color: #f75e05;
 }
 
-.modal-up, .link-up {
+.modal-up,
+.link-up {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -893,7 +894,8 @@ nav.sub-menu-open .nav-links li {
     margin-bottom: 60px;
   }
 }
-.benefits h6, .benefits h3 {
+.benefits h6,
+.benefits h3 {
   text-align: center;
 }
 
@@ -1015,7 +1017,8 @@ nav.sub-menu-open .nav-links li {
     margin-bottom: 60px;
   }
 }
-.events h6, .events h3 {
+.events h6,
+.events h3 {
   text-align: center;
 }
 
@@ -1218,7 +1221,8 @@ nav.sub-menu-open .nav-links li {
   }
 }
 @media screen and (max-width: 440px) {
-  .team__header h3, .team__header h6 {
+  .team__header h3,
+  .team__header h6 {
     text-align: center;
   }
 }
@@ -1239,11 +1243,13 @@ nav.sub-menu-open .nav-links li {
   cursor: pointer;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   background: transparent;
   transition: 0.3s;
 }
-.slick-prev::after, .slick-next::after {
+.slick-prev::after,
+.slick-next::after {
   background: #ff3f3a;
 }
 
@@ -1270,6 +1276,7 @@ nav.sub-menu-open .nav-links li {
 }
 .team__squad-item:hover ul {
   bottom: 90px;
+  opacity: 1;
 }
 .team__squad-item p {
   font-weight: 700;
@@ -1286,11 +1293,12 @@ nav.sub-menu-open .nav-links li {
 }
 .team__squad-item ul {
   display: flex;
+  opacity: 0;
   gap: 12px;
   position: absolute;
-  bottom: -30px;
+  bottom: 70px;
   right: 20px;
-  transition: bottom 0.5s;
+  transition: bottom 0.3s;
   z-index: 3;
 }
 .team__squad-item .team__card {
@@ -1355,7 +1363,8 @@ nav.sub-menu-open .nav-links li {
     display: none;
   }
 }
-.comment h6, .comment h3 {
+.comment h6,
+.comment h3 {
   text-align: center;
 }
 
@@ -1875,7 +1884,8 @@ nav.sub-menu-open .nav-links li {
   }
 }
 
-.copyright__left p, .copyright__left span {
+.copyright__left p,
+.copyright__left span {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;

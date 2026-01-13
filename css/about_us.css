@@ -18,7 +18,8 @@ li {
   list-style: none;
 }
 
-h1, h3 {
+h1,
+h3 {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -439,7 +440,8 @@ nav.sub-menu-open .nav-links li {
   color: #f75e05;
 }
 
-.modal-up, .link-up {
+.modal-up,
+.link-up {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -645,7 +647,8 @@ nav.sub-menu-open .nav-links li {
     margin-bottom: 60px;
   }
 }
-.values h6, .values h3 {
+.values h6,
+.values h3 {
   text-align: center;
 }
 
@@ -709,7 +712,8 @@ nav.sub-menu-open .nav-links li {
     margin-bottom: 60px;
   }
 }
-.directions h6, .directions h3 {
+.directions h6,
+.directions h3 {
   text-align: center;
 }
 
@@ -824,7 +828,8 @@ nav.sub-menu-open .nav-links li {
   }
 }
 @media screen and (max-width: 768px) {
-  .steps__describe h3, .steps__describe h6 {
+  .steps__describe h3,
+  .steps__describe h6 {
     text-align: center;
   }
 }
@@ -893,7 +898,8 @@ nav.sub-menu-open .nav-links li {
     margin-bottom: 60px;
   }
 }
-.team h6, .team h3 {
+.team h6,
+.team h3 {
   text-align: center;
 }
 
@@ -915,6 +921,7 @@ nav.sub-menu-open .nav-links li {
 }
 .team__squad-item:hover ul {
   bottom: 90px;
+  opacity: 1;
 }
 .team__squad-item p {
   font-weight: 700;
@@ -931,11 +938,12 @@ nav.sub-menu-open .nav-links li {
 }
 .team__squad-item ul {
   display: flex;
+  opacity: 0;
   gap: 12px;
   position: absolute;
-  bottom: -30px;
+  bottom: 70px;
   right: 20px;
-  transition: bottom 0.5s;
+  transition: bottom 0.3s;
   z-index: 3;
 }
 .team__squad-item .team__card {
@@ -999,7 +1007,8 @@ nav.sub-menu-open .nav-links li {
     display: none;
   }
 }
-.comment h6, .comment h3 {
+.comment h6,
+.comment h3 {
   text-align: center;
 }
 
@@ -1070,7 +1079,8 @@ nav.sub-menu-open .nav-links li {
     padding: 50px 0;
   }
 }
-.jobs h6, .jobs h3 {
+.jobs h6,
+.jobs h3 {
   text-align: center;
 }
 .jobs ul {
@@ -1547,7 +1557,8 @@ nav.sub-menu-open .nav-links li {
   }
 }
 
-.copyright__left p, .copyright__left span {
+.copyright__left p,
+.copyright__left span {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
